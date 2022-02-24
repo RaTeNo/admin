@@ -1,0 +1,190 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 100%;
+        --font_size_title: 19px;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+        padding: 32px 24px 0;
+    }
+
+
+
+    /*----------------
+        Page title
+    ----------------*/
+    .page_title
+    {
+        font-size: 24px;
+    }
+
+    .page_title .icon
+    {
+        width: 22px;
+        height: 18px;
+        margin-right: 12px;
+    }
+
+
+
+    /*---------------
+        Back link
+    ---------------*/
+    .back_link a.big
+    {
+        font-size: 19px;
+    }
+
+    .back_link a.big .icon
+    {
+        width: 22px;
+        height: 18px;
+        margin-right: 12px;
+    }
+
+
+
+    /*-----------------
+        Block title
+    -----------------*/
+    .block_title
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        position: fixed;
+        z-index: 90;
+        top: 0;
+
+        display: none;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 18px 0;
+    }
+
+
+    aside .close_btn
+    {
+        display: flex;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome .avatar
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+    .welcome .avatar .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+    .welcome .avatar + *
+    {
+        width: calc(100% - 72px);
+    }
+
+
+    .welcome .name
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+
+    /*------------------
+        Notification
+    ------------------*/
+    .notification .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .notification .icon .count
+    {
+        font-size: 12px;
+        line-height: 20px;
+
+        top: -8px;
+        right: -8px;
+
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .notification .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+}

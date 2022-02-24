@@ -1,0 +1,814 @@
+@media print, (max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 280px;
+    }
+
+
+    .content_flex .content
+    {
+        padding: 40px 32px 0;
+    }
+
+
+    .content .col_main
+    {
+        width: calc(100% - 284px);
+    }
+
+    .content .col_right
+    {
+        width: 260px;
+    }
+
+
+    .content .cols .block_title
+    {
+        font-size: 26px;
+        line-height: calc(100% + 4px);
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Page title
+    ----------------*/
+    .page_title
+    {
+        font-size: 26px;
+    }
+
+    .page_title .icon
+    {
+        width: 26px;
+        height: 20px;
+        margin-right: 16px;
+    }
+
+
+
+    /*---------------
+        Back link
+    ---------------*/
+    .back_link a.big
+    {
+        font-size: 22px;
+        line-height: calc(100% + 4px);
+    }
+
+    .back_link a.big .icon
+    {
+        width: 26px;
+        height: 20px;
+        margin-right: 16px;
+    }
+
+
+
+    /*-----------------
+        Block title
+    -----------------*/
+    .block_title
+    {
+        font-size: 21px;
+        line-height: 25px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        height: 80px;
+        padding-right: 32px;
+    }
+
+
+    header .wallet
+    {
+        font-size: 15px;
+    }
+
+
+    header .account .user
+    {
+        font-size: 15px;
+
+        margin-left: 30px;
+    }
+
+    header .account .avatar
+    {
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        padding: 40px 0;
+    }
+
+
+    aside .menu .item > a
+    {
+        padding: 0 24px 0 32px;
+    }
+
+    aside .menu .item .count
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        width: 22px;
+        height: 22px;
+    }
+
+
+    aside .menu .item > a.sub_link
+    {
+        margin-right: 10px;
+        margin-left: 17px;
+    }
+
+
+    aside .menu .sub_menu
+    {
+        margin-right: 17px;
+        margin-left: 17px;
+        padding: 2px 20px 15px 67px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+    .block_head .icon
+    {
+        margin-right: 16px;
+    }
+
+
+
+    /*--------------
+        BG block
+    --------------*/
+    .bg_block
+    {
+        padding: 24px;
+    }
+
+    .bg_block > * + *
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+    .text_block blockquote
+    {
+        padding: 20px;
+    }
+
+
+    .text_block figure figcaption
+    {
+        padding: 20px 24px;
+    }
+
+
+    .text_block table th,
+    .text_block table td
+    {
+        padding: 14px 16px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome
+    {
+        padding: 24px;
+    }
+
+
+    .welcome .avatar
+    {
+        width: 64px;
+        height: 64px;
+    }
+
+    .welcome .avatar .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .welcome .avatar + *
+    {
+        width: calc(100% - 84px);
+    }
+
+
+    .welcome .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    /*------------------
+        Notification
+    ------------------*/
+    .notification
+    {
+        padding: 24px;
+    }
+
+
+    .notification .icon
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+    .notification .icon + *
+    {
+        width: calc(100% - 68px);
+    }
+
+    .notification .icon .count
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        top: -12px;
+        right: -12px;
+
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .notification .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------
+        Courses
+    -------------*/
+    .courses .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .courses .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .courses .course .stickers
+    {
+        top: 10px;
+        left: 10px;
+
+        width: calc(100% - 10px);
+    }
+
+    .courses .course .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------
+        Simulators
+    ----------------*/
+    .simulators .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .simulators .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .simulators .simulator .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-----------------
+        Discussions
+    -----------------*/
+    .discussions .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .discussions .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .discussions .discussion .name
+    {
+        font-size: 15px;
+    }
+
+    .discussions .discussion .last_date
+    {
+        max-width: 160px;
+
+        text-align: right;
+    }
+
+
+
+    /*-----------
+        Polls
+    -----------*/
+    .polls .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .polls .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .polls .poll .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*--------------
+        Webinars
+    --------------*/
+    .webinars .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .webinars .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .webinars .webinar .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*--------------
+        Podcasts
+    --------------*/
+    .podcasts .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .podcasts .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .podcasts .podcast .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .files .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .files .file.folder .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    .files .table .col_actions
+    {
+        width: 164px;
+        min-width: 164px;
+    }
+
+    .files .table .col_date
+    {
+        width: 132px;
+        min-width: 132px;
+    }
+
+    .files .table .col_size
+    {
+        width: 92px;
+        min-width: 92px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .persons .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .persons .person .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*---------------
+        Work book
+    ---------------*/
+    .workbook .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .workbook .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .workbook .item .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------------
+        Lecture steps
+    -------------------*/
+    .lecture_steps
+    {
+        padding: 24px 20px;
+    }
+
+
+    .lecture_steps .title
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .lecture_steps .steps > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .lecture_steps .bottom
+    {
+        margin: 20px -20px -24px;
+        padding: 24px 20px;
+    }
+
+    .lecture_steps .count
+    {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+
+    /*-------------
+        Folders
+    -------------*/
+    .folders .col_size
+    {
+        width: 190px;
+        min-width: 190px;
+    }
+
+    .folders .col_last_date
+    {
+        width: 164px;
+        min-width: 164px;
+    }
+
+
+
+    /*---------------
+        Test data
+    ---------------*/
+    .test_data .title
+    {
+        font-size: 21px;
+    }
+
+
+    .test_data .step .question
+    {
+        font-size: 15px;
+    }
+
+
+    .test_data .step .answers .row,
+    .test_data .step .answers .row.default
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .test_data .step .answers .row > *
+    {
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+    .test_data .step .answers .row.default > *
+    {
+        width: calc(25% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+
+    /*-------------------
+        Workbook item
+    -------------------*/
+    .workbook_item .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .workbook_item .form .question
+    {
+        font-size: 15px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    /*--------------------
+        Simulator item
+    --------------------*/
+    .simulator_item .page_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .simulator_item .head
+    {
+        padding: 20px;
+    }
+
+
+    .simulator_item .item
+    {
+        padding: 24px 20px;
+    }
+
+    .simulator_item .item > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .simulator_item .label
+    {
+        font-size: 15px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .simulator_item .message
+    {
+        line-height: 19px;
+
+        padding: 12px 16px;
+    }
+
+
+
+    /*------------
+        Dialog
+    ------------*/
+    .dialog .page_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    .dialog .head
+    {
+        padding: 24px;
+    }
+
+    .dialog .head .count
+    {
+        top: 20px;
+        left: 20px;
+    }
+
+    .dialog .head .person
+    {
+        font-size: 17px;
+    }
+
+    .dialog .head .what_do_link
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+
+
+    .dialog .messages
+    {
+        padding: 40px 60px;
+    }
+
+    .dialog .message .name
+    {
+        font-size: 16px;
+    }
+
+    .dialog .message .text_message
+    {
+        font-size: 17px;
+    }
+
+
+
+    .dialog .add_message
+    {
+        padding: 40px 60px 40px 125px;
+    }
+
+    .dialog .add_message textarea
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .dialog .add_message .submit_btn img
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    .dialog .next_link,
+    .dialog .upload
+    {
+        padding: 40px 60px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        width: calc(100% + 64px) !important;
+        margin: auto -32px 0 -32px !important;
+        padding: 40px 32px;
+    }
+
+
+    footer .contacts .name
+    {
+        font-size: 15px;
+    }
+}

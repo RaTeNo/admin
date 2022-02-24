@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account">
+							<a href="/" class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a class="active">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+										<span class="count">3</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon3">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Все курсы</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Аудио тренажеры</a></div>
+										<div><a href="/">Тренажеры действий</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="welcome">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user2"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div>
+									<div class="name">Добрый день, Дмитрий!</div>
+									<div class="last_date">Последний вход: 3 января 2022 в 18:00</div>
+								</div>
+							</section>
+
+
+							<section class="notification">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_feedback"></use></svg>
+									<span class="count">1</span>
+								</div>
+
+								<div>
+									<div class="title">Для вас доступна новая обратная связь</div>
+								</div>
+							</section>
+
+
+							<section class="courses">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="17"><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Курсы</div>
+										<div class="count">Пройдено курсов: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="course">
+										<div class="stickers">
+											<div class="sticker blue">новый</div>
+											<div class="sticker red">обязательный</div>
+										</div>
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Продажи сайтов</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 0%;"></div>
+												<div class="val">0%</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course">
+										<div class="stickers">
+											<div class="sticker red">обязательный</div>
+										</div>
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Узнай свой психотип</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 10%;">
+													<div class="val">10%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course">
+										<div class="stickers">
+											<div class="sticker red">обязательный</div>
+										</div>
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 70%;">
+													<div class="val">70%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="simulators">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="28"><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Тренажеры</div>
+										<div class="count">Новых: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="simulator">
+										<div class="format orange">аудио формат</div>
+
+										<div class="name">
+											<a href="/">Продажи сайтов</a>
+										</div>
+
+										<div class="questions_count">15 вопросов</div>
+
+										<div class="links">
+											<div><a href="/" class="blue">Запустить</a></div>
+											<div><a href="/" class="orange">История</a></div>
+										</div>
+
+										<div class="last_date green">Последний запуск: 15.01.2021 в 15:45</div>
+									</div>
+
+									<div class="simulator">
+										<div class="format blue">видео формат</div>
+
+										<div class="name">
+											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
+										</div>
+
+										<div class="questions_count">15 вопросов</div>
+
+										<div class="links">
+											<div><a href="/" class="blue">Запустить</a></div>
+										</div>
+
+										<div class="last_date red">Последний запуск: Никогда</div>
+									</div>
+
+									<div class="simulator">
+										<div class="format green">текстовый формат</div>
+
+										<div class="name">
+											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
+										</div>
+
+										<div class="questions_count">15 вопросов</div>
+
+										<div class="links">
+											<div><a href="/" class="blue">Запустить</a></div>
+										</div>
+
+										<div class="last_date red">Последний запуск: Никогда</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="articles">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="24"><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Новости</div>
+										<div class="count">Непрочитанных: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
+											</div>
+
+											<div class="date">30.11.2021</div>
+										</div>
+									</div>
+
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Продажи сайтов</a>
+											</div>
+
+											<div class="date">30.11.2021</div>
+										</div>
+									</div>
+
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb3.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Продажи сайтов</a>
+											</div>
+
+											<div class="date">30.11.2021</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="discussions">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="28"><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Обсуждения</div>
+										<div class="count">Новых обсуждений: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="discussion">
+										<div class="name">
+											<a href="/">Что дарим на новый год?</a>
+										</div>
+
+										<div class="stats">
+											<div class="answers_count">
+												<span>15 ответов</span>
+												<span class="new">2</span>
+											</div>
+
+											<div class="last_date green">Последний: 15:35 от Иванов Д.</div>
+										</div>
+									</div>
+
+									<div class="discussion">
+										<div class="name">
+											<a href="/">Как улучшить рабочее место слесаря в нашей компании?</a>
+										</div>
+
+										<div class="stats">
+											<div class="answers_count">
+												<span>15 ответов</span>
+											</div>
+
+											<div class="last_date">Последний: 15:35 от ОченьДлиннойФамилии Д.</div>
+										</div>
+									</div>
+
+									<div class="discussion">
+										<div class="name">
+											<a href="/">Как улучшить рабочее место слесаря в нашей компании?</a>
+										</div>
+
+										<div class="stats">
+											<div class="answers_count">
+												<span>15 ответов</span>
+											</div>
+
+											<div class="last_date">Последний: 15:35 от Иванов Д.</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="polls">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="28"><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Опросы</div>
+										<div class="count">Непройденных: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="poll">
+										<div class="name">
+											<a href="/">Оцените новый блок отпусков</a>
+										</div>
+
+										<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+										<div class="bottom">
+											<div class="date">до 31.01.2022</div>
+
+											<a href="/" class="link">Пройти опрос</a>
+										</div>
+									</div>
+
+									<div class="poll">
+										<div class="voted">вы проголосовали</div>
+
+										<div class="name">
+											<a href="/">Оцените новый блок отпусков</a>
+										</div>
+
+										<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+										<div class="bottom">
+											<div class="date">до 31.01.2022</div>
+
+											<a href="/" class="link again">Пройти повторно</a>
+										</div>
+									</div>
+
+									<div class="poll">
+										<div class="voted">вы проголосовали</div>
+
+										<div class="name">
+											<a href="/">Оцените новый блок отпусков</a>
+										</div>
+
+										<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+										<div class="bottom">
+											<div class="date">до 31.01.2022</div>
+
+											<a href="/" class="link again">Пройти повторно</a>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="webinars">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="23"><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Вебинары</div>
+										<div class="count">Новых: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="webinar">
+										<div class="name">
+											<a href="/">Продажи сайтов</a>
+										</div>
+
+										<div class="desc">Краткое описание вебинара, максимум на две строки</div>
+
+										<div class="bottom">
+											<div class="date">
+												<div><b>Идет</b></div>
+												<div>31.01.2022 в 21:00</div>
+											</div>
+
+											<a href="/" class="link">Открыть комнату</a>
+										</div>
+									</div>
+
+									<div class="webinar">
+										<div class="name">
+											<a href="/">Продажи сайтов</a>
+										</div>
+
+										<div class="desc">Краткое описание вебинара, максимум на две строки</div>
+
+										<div class="bottom">
+											<div class="date">
+												<div>Завершен</div>
+												<div>31.01.2022 в 21:00</div>
+											</div>
+
+											<a href="/" class="link record">смотреть запись</a>
+										</div>
+									</div>
+
+									<div class="webinar">
+										<div class="name">
+											<a href="/">Продажи сайтов</a>
+										</div>
+
+										<div class="desc">Краткое описание вебинара, максимум на две строки</div>
+
+										<div class="bottom">
+											<div class="date">
+												<div>Завершен</div>
+												<div>31.01.2022 в 21:00</div>
+											</div>
+
+											<a href="/" class="link record">смотреть запись</a>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="podcasts">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="13"><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Подкасты</div>
+										<div class="count">Новых: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="podcast">
+										<div class="name">
+											<a href="/">
+												<span>Название подкаста</span>
+											</a>
+										</div>
+
+										<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+									</div>
+
+									<div class="podcast">
+										<div class="name">
+											<a href="/">
+												<div class="thumb">
+													<img data-src="images/tmp/podcast_thumb.jpg" alt="" class="lozad">
+												</div>
+												<span>Что сделать заранее, чтобы 31 декабря не стоять у плиты</span>
+											</a>
+										</div>
+
+										<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+									</div>
+
+									<div class="podcast">
+										<div class="name">
+											<a href="/">
+												<div class="thumb">
+													<img data-src="images/tmp/podcast_thumb.jpg" alt="" class="lozad">
+												</div>
+												<span>Что сделать заранее, чтобы 31 декабря не стоять у плиты</span>
+											</a>
+										</div>
+
+										<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="files">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="19"><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Файлы</div>
+										<div class="count">Новых: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="file">
+										<div class="type blue">
+											<span>.doc</span>
+										</div>
+
+										<div>
+											<div class="name">Супер длинное название файла в две строки.doc</div>
+
+											<div class="links">
+												<div><a href="/" class="green">Скачать</a></div>
+												<div><a href="/" class="blue">Посмотреть</a></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="file folder">
+										<div class="icon">
+											<img data-src="images/ic_folder.svg" alt="" class="lozad">
+										</div>
+
+										<div>
+											<div class="name">
+												<a href="/">Супер длинное название папки в две строки</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="file">
+										<div class="type red">
+											<span>.pdf</span>
+										</div>
+
+										<div>
+											<div class="name">filename.doc</div>
+
+											<div class="links">
+												<div><a href="/" class="green">Скачать</a></div>
+												<div><a href="/" class="blue">Посмотреть</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="persons">
+								<div class="block_head">
+									<div class="icon">
+										<svg width="28" height="27"><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Коллеги</div>
+										<div class="count">Новых: 43</div>
+									</div>
+
+									<div class="all_link">
+										<a href="/">
+											<span>Открыть все</span>
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="person">
+										<div class="type red">Наставник</div>
+
+										<div class="avatar">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<img data-src="images/tmp/person_avatar.jpg" alt="" class="lozad">
+										</div>
+
+										<div class="name">Иван Петров</div>
+
+										<div class="post">Отдел продаж, менеджер по продажам</div>
+									</div>
+
+									<div class="person">
+										<div class="type green">Ученик</div>
+
+										<div class="avatar">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<!-- <img data-src="images/tmp/person_avatar.jpg" alt="" class="lozad"> -->
+										</div>
+
+										<div class="name">Длинное имя<br> в две строки</div>
+
+										<div class="post">Отдел продаж, менеджер по продажам</div>
+									</div>
+
+									<div class="person">
+										<div class="type green">Ученик</div>
+
+										<div class="avatar">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<img data-src="images/tmp/person_avatar.jpg" alt="" class="lozad">
+										</div>
+
+										<div class="name">Иван Петров</div>
+
+										<div class="post">Отдел продаж, менеджер по продажам</div>
+									</div>
+								</div>
+							</section>
+
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

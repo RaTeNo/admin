@@ -1,0 +1,273 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 16px;
+    }
+
+
+    .content_flex .content
+    {
+        padding: 30px 22px 0;
+    }
+
+
+    .content .cols .block_title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*----------------
+        Page title
+    ----------------*/
+    .page_title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*-----------------
+        Block title
+    -----------------*/
+    .block_title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /*--------------
+        BG block
+    --------------*/
+    .bg_block
+    {
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+        padding: 22px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 14px 22px;
+    }
+
+
+    .mob_header .nitifications,
+    .mob_header .account
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .text_block figure figcaption
+    {
+        font-size: 12px;
+        line-height: 14px;
+
+        padding: 14px 18px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome .avatar
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .welcome .avatar + *
+    {
+        width: calc(100% - 66px);
+    }
+
+    .welcome .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .welcome .last_date
+    {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+
+
+    /*------------------
+        Notification
+    ------------------*/
+    .notification .icon + *
+    {
+        width: calc(100% - 66px);
+    }
+
+    .notification .title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /*---------------
+        Test data
+    ---------------*/
+    .test_data
+    {
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+    }
+
+
+    .test_data .title
+    {
+        font-size: 19px;
+    }
+
+
+    .test_data .step .answers .row
+    {
+        margin-bottom: -15px;
+        margin-left: -15px;
+    }
+
+    .test_data .step .answers .row > *
+    {
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+
+    .test_data .step .answers .row.default
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .test_data .step .answers .row.default > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .test_data .step .answers .text
+    {
+        line-height: 32px;
+    }
+
+    .test_data .step .answers .text .input
+    {
+        height: 28px;
+    }
+
+
+
+    /*----------
+        Quiz
+    ----------*/
+    .quiz .steps .answers .row
+    {
+        margin-left: 0;
+    }
+
+    .quiz .steps .answers .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .quiz .total_answers,
+    .quiz .result
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-------------------
+        Workbook item
+    -------------------*/
+    .workbook_item .title
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+    .workbook_item .form .question
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*--------------------
+        Simulator item
+    --------------------*/
+    .simulator_item .audio_message .audio_wave
+    {
+        width: 214px;
+    }
+
+
+    .simulator_item .audio_message .duration
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        margin-left: 8px;
+    }
+
+
+
+    /*------------
+        Dialog
+    ------------*/
+    .dialog .data
+    {
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+
+        border-radius: 0;
+    }
+
+
+
+    .dialog .message .audio_message .audio_wave
+    {
+        width: 120px;
+    }
+}

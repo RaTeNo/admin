@@ -1,0 +1,1158 @@
+@media print, (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .content_flex .content
+    {
+        padding: 32px 24px 0;
+    }
+
+
+    .content .col_main
+    {
+        width: 100%;
+    }
+
+    .content .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .content .cols .block_title
+    {
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------
+        Page title
+    ----------------*/
+    .page_title
+    {
+        font-size: 25px;
+    }
+
+
+
+    /*---------------
+        Back link
+    ---------------*/
+    .back_link a.big
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------------
+        Block title
+    -----------------*/
+    .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    /*---------------
+        Back link
+    ---------------*/
+    .back_link
+    {
+        margin-bottom: 0;
+    }
+
+
+    .back_link .icon
+    {
+        width: 18px;
+        height: 13px;
+        margin-right: 12px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        height: 64px;
+        padding-right: 24px;
+    }
+
+
+    header .wallet
+    {
+        font-size: var(--font_size);
+    }
+
+    header .wallet .icon
+    {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+
+    header .sep
+    {
+        margin-left: 28px;
+    }
+
+
+    header .account
+    {
+        margin-left: 28px;
+    }
+
+
+    header .account .settings_link .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    header .account .user
+    {
+        font-size: var(--font_size);
+
+        margin-left: 28px;
+    }
+
+    header .account .avatar
+    {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    header .account .avatar .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    header .account .logout_link
+    {
+        width: 22px;
+        height: 22px;
+        margin-left: 12px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome
+    {
+        padding: 20px;
+    }
+
+
+    .welcome .avatar
+    {
+        width: 56px;
+        height: 56px;
+    }
+
+    .welcome .avatar .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .welcome .avatar + *
+    {
+        width: calc(100% - 76px);
+    }
+
+
+
+    /*------------------
+        Notification
+    ------------------*/
+    .notification
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-------------
+        Courses
+    -------------*/
+    .courses .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .courses .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .courses .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .courses .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .courses .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .courses .course .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+    .courses .course.lock .name
+    {
+        padding-left: 24px;
+    }
+
+    .courses .course.lock .name .icon
+    {
+        top: 0;
+
+        width: 15px;
+        height: 19px;
+    }
+
+
+
+    /*----------------
+        Simulators
+    ----------------*/
+    .simulators .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 11px 24px 0;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .simulators .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .simulators .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .simulators .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .simulators .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .simulators .simulator .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row,
+    .articles .list
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .articles .row::-webkit-scrollbar,
+    .articles .list::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .articles .row::-webkit-scrollbar-thumb,
+    .articles .list::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .row > *,
+    .articles .list > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .articles .row > * + *,
+    .articles .list > * + *
+    {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+
+    .articles .article .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*-----------------
+        Discussions
+    -----------------*/
+    .discussions .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .discussions .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .discussions .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .discussions .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .discussions .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .discussions .discussion .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .discussions .discussion .last_date
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        width: 100%;
+        max-width: 100%;
+        height: 28px;
+        margin-top: 8px;
+
+        text-align: left;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*-----------
+        Polls
+    -----------*/
+    .polls .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .polls .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .polls .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .polls .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .polls .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .polls .poll .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*--------------
+        Webinars
+    --------------*/
+    .webinars .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .webinars .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .webinars .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .webinars .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .webinars .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .webinars .webinar .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .webinars .webinar .date
+    {
+        width: 100%;
+    }
+
+    .webinars .webinar .link
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*--------------
+        Podcasts
+    --------------*/
+    .podcasts .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .podcasts .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .podcasts .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .podcasts .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .podcasts .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .podcasts .podcast .name
+    {
+        height: 39px;
+    }
+
+    .podcasts .podcast .thumb + *
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .files .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .files .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .files .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .files .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .files .row .file
+    {
+        position: relative;
+
+        height: 99px;
+        padding-left: 63px;
+    }
+
+    .files .row .file .type,
+    .files .row .file .icon
+    {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .files .row .file .type + *,
+    .files .row .file .icon + *
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .files .row .file .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        max-height: 38px;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .files .row .file .links
+    {
+        margin-top: 5px;
+    }
+
+
+
+    .files .table .col_actions
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .files .table .col_date
+    {
+        width: 104px;
+        min-width: 104px;
+    }
+
+    .files .table .col_size
+    {
+        width: 64px;
+        min-width: 64px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .persons .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .persons .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .persons .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .persons .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .persons .person .avatar
+    {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .persons .person .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        margin-left: auto;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*---------------
+        Work book
+    ---------------*/
+    .workbook .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .workbook .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .workbook .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .workbook .row > *
+    {
+        display: inline-block;
+
+        width: 264px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .workbook .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .workbook .item .name
+    {
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    /*-------------
+        Folders
+    -------------*/
+    .folders .folder .col_name
+    {
+        font-size: 15px;
+    }
+
+
+    .folders .col_size
+    {
+        width: 92px;
+        min-width: 92px;
+    }
+
+    .folders .col_last_date
+    {
+        width: 132px;
+        min-width: 132px;
+    }
+
+
+
+    /*-----------------
+        Test report
+    -----------------*/
+    .test_report .titles > *
+    {
+        padding: 12px 16px;
+    }
+
+
+    .test_report .line > *
+    {
+        padding: 12px 16px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .titles > *
+    {
+        padding: 12px 16px;
+    }
+
+
+    .feedback .line > *
+    {
+        padding: 12px 16px;
+    }
+
+
+
+    /*----------
+        Quiz
+    ----------*/
+    .quiz .steps .question
+    {
+        font-size: 19px;
+
+        padding: 35px 31px 31px;
+    }
+
+
+    .quiz .steps .answers .row
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    .quiz .steps .answers .row > *
+    {
+        width: calc(50% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+
+    .quiz .steps .answers label
+    {
+        font-size: 15px;
+
+        min-height: 52px;
+        padding: 11px;
+    }
+
+
+    .quiz .total_answers
+    {
+        margin-top: 28px;
+        padding: 24px 28px;
+    }
+
+    .quiz .total_answers .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .quiz .result
+    {
+        padding: 24px 40px 32px;
+    }
+
+    .quiz .result .pre_title
+    {
+        margin-bottom: 24px;
+    }
+
+    .quiz .result .title
+    {
+        font-size: 19px;
+
+        margin-bottom: 24px;
+    }
+
+    .quiz .result .desc
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------------
+        Workbook item
+    -------------------*/
+    .workbook_item .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+
+    /*--------------------
+        Simulator item
+    --------------------*/
+    .simulator_item .page_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------
+        Dialog
+    ------------*/
+    .dialog .page_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    .dialog .head
+    {
+        padding: 22px;
+    }
+
+    .dialog .head .person
+    {
+        font-size: 16px;
+    }
+
+    .dialog .head .person .photo
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+    .dialog .messages
+    {
+        padding: 30px;
+    }
+
+    .dialog .message .name
+    {
+        font-size: 15px;
+    }
+
+    .dialog .message .text_message
+    {
+        font-size: 16px;
+    }
+
+
+
+    .dialog .add_message
+    {
+        padding: 30px 30px 30px 95px;
+    }
+
+    .dialog .add_message textarea
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    .dialog .next_link,
+    .dialog .upload
+    {
+        padding: 30px 30px 60px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        width: calc(100% + 48px) !important;
+        margin: auto -24px 0 -24px !important;
+        padding: 32px 24px;
+    }
+
+
+    footer .logo
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
