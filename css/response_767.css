@@ -680,6 +680,15 @@
     }
 
 
+    .dialog .head .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 36px 0 0;
+    }
+
+
 
     .dialog .messages
     {
@@ -847,6 +856,92 @@
     {
         width: 48px;
         height: 48px;
+    }
+
+
+    .dialog .image_wrap .image
+    {
+        border-radius: 0;
+    }
+
+
+    .dialog .image_wrap .prompt_btn
+    {
+        top: 12px;
+        left: 12px;
+    }
+
+
+    .dialog .prompt_text,
+    .dialog .error_text,
+    .dialog .success_text
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 20px;
+    }
+
+    .dialog .prompt_text span,
+    .dialog .error_text span,
+    .dialog .success_text span
+    {
+        padding: 12px;
+    }
+
+
+    .dialog .go_link
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-----------------------
+        Simulator actions
+    -----------------------*/
+    .simulator_actions .steps .question
+    {
+        font-size: 18px;
+
+        margin-bottom: 16px;
+        padding: 23px;
+    }
+
+
+    .simulator_actions .steps .answers .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .simulator_actions .steps .answers .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+    .simulator_actions .steps .answers label
+    {
+        font-size: 14px;
+
+        min-height: 48px;
+    }
+
+
+    .simulator_actions .error_text,
+    .simulator_actions .success_text
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .simulator_actions .error_text span,
+    .simulator_actions .success_text span
+    {
+        padding: 12px;
     }
 
 

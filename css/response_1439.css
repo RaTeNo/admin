@@ -750,6 +750,14 @@
         right: 20px;
     }
 
+    .dialog .head .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        padding: 52px 140px 0;
+    }
+
 
 
     .dialog .messages
@@ -792,6 +800,41 @@
     .dialog .upload
     {
         padding: 40px 60px;
+    }
+
+
+
+    .dialog .image_wrap .prompt_btn
+    {
+        top: 16px;
+        left: 16px;
+
+        padding: 8px 16px;
+    }
+
+    .dialog .image_wrap ~ .next_link
+    {
+        padding-bottom: 30px;
+    }
+
+
+
+    .dialog .prompt_text,
+    .dialog .error_text,
+    .dialog .success_text
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        padding: 40px;
+    }
+
+
+    .simulator_actions .error_text,
+    .simulator_actions .success_text
+    {
+        font-size: 18px;
+        line-height: 24px;
     }
 
 

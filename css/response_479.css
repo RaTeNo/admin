@@ -270,4 +270,32 @@
     {
         width: 120px;
     }
+
+
+    .dialog .head + .video_player
+    {
+        border-radius: 0;
+    }
+
+
+
+    /*-----------------------
+        Simulator actions
+    -----------------------*/
+    .simulator_actions .steps .question
+    {
+        padding: 19px;
+    }
+
+
+    .simulator_actions .steps .answers .row
+    {
+        margin-left: 0;
+    }
+
+    .simulator_actions .steps .answers .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
 }

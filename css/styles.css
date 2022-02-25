@@ -6220,6 +6220,23 @@ aside .menu .sub_menu a
     border-bottom: 1px solid #d0d0d0;
 }
 
+.dialog .head.no_border
+{
+    border: none;
+}
+
+
+.dialog .head .title
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+
+    padding: 70px 160px 0;
+
+    text-align: center;
+}
+
 
 .dialog .head .count
 {
@@ -7179,6 +7196,469 @@ aside .menu .sub_menu a
 
     width: 56px;
     height: 56px;
+}
+
+
+
+.dialog .image_wrap
+{
+    position: relative;
+}
+
+
+.dialog .image_wrap ~ .next_link
+{
+    display: none;
+
+    padding-top: 0;
+}
+
+
+.dialog .image_wrap .image
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 44.55%;
+
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.dialog .image_wrap .image:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: opacity .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 4px #ff4d4d;
+}
+
+.dialog .image_wrap .image.error:after
+{
+    opacity: 1;
+}
+
+
+.dialog .image_wrap .image svg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.dialog .image_wrap .image svg circle
+{
+    cursor: default;
+    transition: .2s linear;
+
+    opacity: 0;
+
+    --strokeColor: transparent;
+    --fillColor: transparent;
+}
+
+.dialog .image_wrap .image svg circle.show
+{
+    cursor: pointer;
+    pointer-events: auto;
+
+    opacity: 1;
+
+    --strokeColor: #0a00c5;
+    --fillColor: rgba(255,255,255,.75);
+}
+
+.dialog .image_wrap .image svg circle.error
+{
+    pointer-events: auto;
+
+    opacity: 1;
+
+    --strokeColor: #ff4d4d;
+    --fillColor: rgba(255,255,255,.75);
+}
+
+.dialog .image_wrap .image svg circle.success
+{
+    pointer-events: auto;
+
+    opacity: 1;
+
+    --strokeColor: #23e843;
+    --fillColor: rgba(255,255,255,.75);
+}
+
+
+.dialog .image_wrap .prompt_btn
+{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 23px;
+
+    padding: 9px 22px;
+
+    border-radius: 10px;
+    background: #0a00c5;
+}
+
+
+
+.dialog .prompt_text
+{
+    font-size: 19px;
+    line-height: 33px;
+
+    padding: 50px;
+
+    text-align: center;
+    letter-spacing: -.95px;
+}
+
+.dialog .prompt_text span
+{
+    display: inline-block;
+
+    width: 803px;
+    max-width: 100%;
+    padding: 10px 30px;
+
+    vertical-align: top;
+
+    border-radius: 21px;
+    background: #d6dfff;
+}
+
+
+.dialog .error_text
+{
+    color: #ff4d4d;
+    font-size: 19px;
+    line-height: 33px;
+
+    display: none;
+
+    padding: 50px;
+
+    text-align: center;
+    letter-spacing: -.95px;
+}
+
+.dialog .error_text span
+{
+    display: inline-block;
+
+    width: 803px;
+    max-width: 100%;
+    padding: 10px 30px;
+
+    vertical-align: top;
+
+    border-radius: 21px;
+    background: rgba(255, 77, 77, .1);
+}
+
+
+.dialog .success_text
+{
+    color: #12a72a;
+    font-size: 19px;
+    line-height: 33px;
+
+    display: none;
+
+    padding: 50px;
+
+    text-align: center;
+    letter-spacing: -.95px;
+}
+
+.dialog .success_text span
+{
+    display: inline-block;
+
+    width: 803px;
+    max-width: 100%;
+    padding: 10px 30px;
+
+    vertical-align: top;
+
+    border-radius: 21px;
+    background: rgba(35, 232, 67, .2);
+}
+
+
+
+.dialog .go_link
+{
+    padding: 40px;
+
+    text-align: center;
+}
+
+.dialog .go_link a
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    border-radius: 78px;
+    background: #0a00c5;
+}
+
+
+
+/*-----------------------
+    Simulator actions
+-----------------------*/
+.simulator_actions .btns
+{
+    display: none;
+
+    margin-bottom: 19px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.simulator_actions .btns .btn
+{
+    color: #7f85ad;
+    line-height: 16px;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.simulator_actions .btns .btn .icon
+{
+    display: block;
+
+    width: 11px;
+    height: 7px;
+}
+
+.simulator_actions .btns .btn.back_btn .icon
+{
+    margin-right: 5px;
+
+    transform: rotate(90deg);
+}
+
+
+.simulator_actions .steps .step
+{
+    display: none;
+}
+
+
+.simulator_actions .steps .question
+{
+    color: #061058;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+
+    margin-bottom: 20px;
+    padding: 33px 32px 32px;
+
+    text-align: center;
+
+    border: 1px solid rgba(11, 0, 216, .5);
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.simulator_actions .steps .answers .row
+{
+    margin-bottom: -20px;
+    margin-left: -20px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.simulator_actions .steps .answers .row > *
+{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.simulator_actions .steps .answers input
+{
+    display: none;
+}
+
+.simulator_actions .steps .answers label
+{
+    color: #4d4f60;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+
+    min-height: 60px;
+    padding: 10px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    text-align: center;
+
+    border: 1px solid rgba(11, 0, 216, .5);
+    border-radius: 15px;
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.simulator_actions .steps .answers input:checked + label,
+.simulator_actions .steps .answers label:hover
+{
+    color: #0b00d8;
+
+    border: 1px solid #0b00d8;
+    background: rgba(11, 0, 216, .05);
+}
+
+
+.simulator_actions .steps .answers input.error + label
+{
+    color: #ff4d4d;
+
+    border: 1px solid #ff4d4d;
+    background: rgba(255, 77, 77, .05);
+}
+
+
+.simulator_actions .steps .answers input.success + label
+{
+    color: #12a72a;
+
+    border: 1px solid #12a72a;
+    background: rgba(18, 167, 42, .05);
+}
+
+
+.simulator_actions .error_text
+{
+    color: #ff4d4d;
+    font-size: 19px;
+    line-height: 33px;
+
+    margin-top: 30px;
+
+    text-align: center;
+    letter-spacing: -.95px;
+}
+
+.simulator_actions .error_text span
+{
+    display: inline-block;
+
+    width: 803px;
+    max-width: 100%;
+    padding: 10px 30px;
+
+    vertical-align: top;
+
+    border-radius: 21px;
+    background: rgba(255, 77, 77, .1);
+}
+
+
+.simulator_actions .success_text
+{
+    color: #12a72a;
+    font-size: 19px;
+    line-height: 33px;
+
+    margin-top: 30px;
+
+    text-align: center;
+    letter-spacing: -.95px;
+}
+
+.simulator_actions .success_text span
+{
+    display: inline-block;
+
+    width: 803px;
+    max-width: 100%;
+    padding: 10px 30px;
+
+    vertical-align: top;
+
+    border-radius: 21px;
+    background: rgba(35, 232, 67, .2);
+}
+
+
+.simulator_actions .next_btn
+{
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.simulator_actions .next_btn .btn
+{
+    color: #fff;
+    font-size: 14px;
+    line-height: 130%;
+
+    padding: 11px 42px;
+
+    border-radius: 45px;
+    background: #0a00c5;
 }
 
 

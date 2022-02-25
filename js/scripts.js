@@ -291,6 +291,35 @@ $(() => {
 
 		$(this).closest('.prompt').slideUp(200)
 	})
+
+
+	$('.dialog .image_wrap .prompt_btn').click(function (e) {
+		e.preventDefault()
+
+		$('.dialog .image_wrap .image svg circle').addClass('show')
+	})
+
+
+	$('.dialog .image_wrap .image svg').click(function (e) {
+		e.preventDefault()
+
+		$('.dialog .prompt_text, .dialog .success_text, .dialog .next_link').hide()
+
+		$('.dialog .image_wrap .image').addClass('error')
+		$('.dialog .error_text').fadeIn(300)
+	})
+
+	$('.dialog .image_wrap .image svg circle').click(function (e) {
+		e.stopPropagation()
+		e.preventDefault()
+
+		$('.dialog .prompt_text, .dialog .error_text').hide()
+
+		$('.dialog .image_wrap .image').removeClass('error')
+		$(this).addClass('success')
+		$('.dialog .success_text').fadeIn(300)
+		$('.dialog .next_link').css('display', 'flex')
+	})
 })
 
 
