@@ -303,13 +303,14 @@ $(() => {
 	$('.dialog .image_wrap .image svg').click(function (e) {
 		e.preventDefault()
 
+		$('.dialog .image_wrap .image .answer').removeClass('success')
 		$('.dialog .prompt_text, .dialog .success_text, .dialog .next_link').hide()
 
 		$('.dialog .image_wrap .image').addClass('error')
 		$('.dialog .error_text').fadeIn(300)
 	})
 
-	$('.dialog .image_wrap .image svg circle').click(function (e) {
+	$('.dialog .image_wrap .image .answer').click(function (e) {
 		e.stopPropagation()
 		e.preventDefault()
 

@@ -7269,7 +7269,7 @@ aside .menu .sub_menu a
 }
 
 
-.dialog .image_wrap .image svg circle
+.dialog .image_wrap .image .answer
 {
     cursor: default;
     transition: .2s linear;
@@ -7280,7 +7280,7 @@ aside .menu .sub_menu a
     --fillColor: transparent;
 }
 
-.dialog .image_wrap .image svg circle.show
+.dialog .image_wrap .image .answer.show
 {
     cursor: pointer;
     pointer-events: auto;
@@ -7291,7 +7291,7 @@ aside .menu .sub_menu a
     --fillColor: rgba(255,255,255,.75);
 }
 
-.dialog .image_wrap .image svg circle.error
+.dialog .image_wrap .image .answer.error
 {
     pointer-events: auto;
 
@@ -7301,7 +7301,7 @@ aside .menu .sub_menu a
     --fillColor: rgba(255,255,255,.75);
 }
 
-.dialog .image_wrap .image svg circle.success
+.dialog .image_wrap .image .answer.success
 {
     pointer-events: auto;
 
