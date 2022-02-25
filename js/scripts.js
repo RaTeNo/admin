@@ -296,7 +296,7 @@ $(() => {
 	$('.dialog .image_wrap .prompt_btn').click(function (e) {
 		e.preventDefault()
 
-		$('.dialog .image_wrap .image svg circle').addClass('show')
+		$('.dialog .image_wrap .image .answer').addClass('show')
 	})
 
 
