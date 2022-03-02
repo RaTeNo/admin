@@ -19,6 +19,24 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.l10n = {
+		CLOSE: "Закрыть",
+		NEXT: "Следующий",
+		PREV: "Предыдущий",
+		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
+	}
+
+	// Всплывающие окна
+	$('body').on('click', '.modal .close_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
+
 	// Моб. версия
 	fiestResize = false
 

@@ -839,6 +839,60 @@
 
 
 
+    /*-----------------
+        Course info
+    -----------------*/
+    .course_info .thumb + *
+    {
+        width: calc(100% - 248px);
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding: 0 80px;
+    }
+
+
+    .error_info .info
+    {
+        width: 512px;
+    }
+
+
+    .error_info .title
+    {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+
+    .error_info .desc
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-top: 20px;
+    }
+
+    .error_info .link
+    {
+        margin-top: 32px;
+        padding: 16px 36px;
+    }
+
+
+    .error_info .code img
+    {
+        width: 540px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

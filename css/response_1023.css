@@ -18,6 +18,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
     /*----------------
         Page title
     ----------------*/
@@ -186,5 +196,79 @@
     {
         font-size: 19px;
         line-height: 23px;
+    }
+
+
+
+    /*-----------------
+        Course info
+    -----------------*/
+    .course_info .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .course_info .steps
+    {
+        margin-top: 24px;
+        padding: 20px;
+    }
+
+    .course_info .steps .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .course_info .steps .step
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding: 24px 52px;
+    }
+
+
+    .error_info .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .error_info .title
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+
+    .error_info .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .error_info .code
+    {
+        width: 100%;
+    }
+
+    .error_info .code img
+    {
+        width: 400px;
+        margin: 0 auto;
     }
 }

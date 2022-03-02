@@ -16,6 +16,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
     /*----------------
         Page title
     ----------------*/
@@ -946,6 +956,72 @@
 
 
 
+    /*-----------------
+        Course info
+    -----------------*/
+    .course_info .thumb + *
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+    .course_info .name
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+    .course_info .steps .title
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+    .course_info .steps .items > * + *
+    {
+        margin-top: 16px;
+    }
+
+    .course_info .steps .step .exp
+    {
+        margin-top: 2px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding: 24px;
+    }
+
+
+    .error_info .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .error_info .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .error_info .code img
+    {
+        width: 360px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -965,5 +1041,16 @@
     footer .contacts .name
     {
         margin-bottom: 4px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal_title
+    {
+        font-size: 22px;
+        line-height: 26px;
     }
 }

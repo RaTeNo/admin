@@ -37,6 +37,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
     /*----------------
         Page title
     ----------------*/
@@ -1204,6 +1214,48 @@
     {
         font-size: 17px;
         line-height: 23px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding: 0 24px;
+    }
+
+
+    .error_info .info
+    {
+        width: 512px;
+    }
+
+
+    .error_info .title
+    {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+
+    .error_info .desc
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .error_info .link
+    {
+        margin-top: 28px;
+        padding: 12px 32px;
+    }
+
+
+    .error_info .code img
+    {
+        width: 440px;
     }
 
 

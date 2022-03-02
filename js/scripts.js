@@ -321,6 +321,22 @@ $(() => {
 		$('.dialog .success_text').fadeIn(300)
 		$('.dialog .next_link').css('display', 'flex')
 	})
+
+
+	// Всплывашки
+	if ($('#congratulations_modal').length) {
+		Fancybox.show([{
+			src: '#congratulations_modal',
+			type: 'inline'
+		}])
+	}
+
+	if ($('#congratulations_modal2').length) {
+		Fancybox.show([{
+			src: '#congratulations_modal2',
+			type: 'inline'
+		}])
+	}
 })
 
 
