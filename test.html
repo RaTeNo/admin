@@ -284,7 +284,7 @@
 											<div class="question">Сколько планет в солнечной системе?</div>
 
 											<div class="answers">
-												<div class="row">
+												<div class="col">
 													<div>
 														<input type="radio" name="answers1" id="answers1_check1">
 														<label for="answers1_check1" class="error">
@@ -364,7 +364,7 @@
 											<div class="exp">Выберите несколько вариантов</div>
 
 											<div class="answers">
-												<div class="row">
+												<div class="col">
 													<div>
 														<input type="checkbox" name="answers2" id="answers2_check1" checked>
 														<label for="answers2_check1" class="error">
@@ -485,7 +485,7 @@
 
 											<div class="answers">
 												<div class="text">
-													Служба <input type="text" name="" value="Блалала" class="input success"> предназначена для студентов и <input type="text" name="" value="Блалала" class="input success">, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, <input type="text" name="" value="Блалала" class="input error"> как к количеству знаков.
+													Служба <input type="text" name="" value="Блалала" class="input success"> предназначена для студентов и <input type="text" name="" value="Блалала" class="input ">, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, <input type="text" name="" value="Блалала" class="input error"> как к количеству знаков.
 												</div>
 											</div>
 
@@ -513,7 +513,7 @@
 													<div class="stems">
 														<ol>
 															<li class="blue" id="s1">
-																<span>Вариант №1</span>
+																<span>Вариант №3 на случай если текст очень длинный и никуда не помещается</span>
 															</li>
 
 															<li class="orange" id="s2">
@@ -522,6 +522,10 @@
 
 															<li class="violet" id="s3">
 																<span>Вариант №3</span>
+															</li>
+
+															<li class="violet" id="s4">
+																<span>Вариант №4</span>
 															</li>
 														</ol>
 													</div>
@@ -537,6 +541,10 @@
 															</li>
 
 															<li class="blue" id="o3">
+																<span>Вариант №3 на случай если текст очень длинный и никуда не помещается</span>
+															</li>
+
+															<li class="blue" id="o4">
 																<span>Вариант №3 на случай если текст очень длинный и никуда не помещается</span>
 															</li>
 														</ol>
@@ -560,6 +568,32 @@
 										</div>
 
 
+										<!-- <div class="step step6">
+											<div class="question">Найдите пару</div>
+
+											<div class="answers" id="answers">
+												<div id="title" >Заголовок</div>
+												<div id="column-left" class="column-left">
+                            					</div>
+          
+            									<div id="column-right" class="column-right">
+            									</div>
+
+            									<canvas id="canvas" width="320" height="160"> Get a better browser, bro.</canvas>
+											</div>
+
+											<div class="bottom">
+												<button class="answer_btn">Ответить</button>
+
+												<div class="result error full_w">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_error"></use></svg>
+													<span>Ответ неверный! Попробуйте заново</span>
+												</div>
+											</div>
+										</div> -->
+
+
+
 										<div class="step step7">
 											<div class="question">Расставьте ответы в порядке возрастания важности</div>
 
@@ -567,14 +601,14 @@
 
 											<div class="answers">
 												<div class="sortable list">
-													<div class="item">
+													<div class="item success">
 														<div>
 															<svg class="icon"><use xlink:href="images/sprite.svg#ic_sort"></use></svg>
 															<span>Ответ №1</span>
 														</div>
 													</div>
 
-													<div class="item">
+													<div class="item error">
 														<div>
 															<svg class="icon"><use xlink:href="images/sprite.svg#ic_sort"></use></svg>
 															<span>Ответ длиннее №2</span>
@@ -621,11 +655,11 @@
 										<div class="title">Передержка кошек, а также других питомцев на даче!</div>
 
 										<div class="steps">
-											<div class="step finished">Что вам известно о продукции?</div>
+											<a href="" class="step finished">Что вам известно о продукции?</a>
 
-											<div class="step active">Какие существуют товары?</div>
+											<a href="" class="step active">Какие существуют товары?</a>
 
-											<div class="step">Что нужно сделать?</div>
+											<a  href="" class="step">Что нужно сделать?</a>
 
 											<div class="step lock">
 												<span>Сколько дней в году?</span>
@@ -694,5 +728,6 @@
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/matching.js"></script>
 	</body>
 </html>
