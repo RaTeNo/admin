@@ -371,6 +371,15 @@
         scrollbar-width: thin !important;
     }
 
+    .articles .row.not_slide {
+        display: flex;
+        padding: 0;
+        margin-right: 0;
+        width: auto;
+    }
+
+
+
     .articles .row::-webkit-scrollbar,
     .articles .list::-webkit-scrollbar
     {
@@ -405,6 +414,16 @@
     {
         margin-top: 0;
         margin-left: 20px;
+    }
+
+    .articles .row.not_slide > *{
+        width: calc(100%/3 - 24px);
+        margin-left: 24px;
+        margin-bottom: 24px;
+    }
+
+    .articles .row.not_slide> * + *{
+
     }
 
 

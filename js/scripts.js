@@ -118,53 +118,66 @@ $(() => {
 	}
 
 	$(".stems li").on("click", function () {
-		stem = $(this)
-		stem.toggleClass("selected")
+		stem = $(this)	
 
-		$(".stems li")
-			.not(stem)
-			.removeClass("selected")
+		if(!stem.hasClass("matched"))
+		{
 
-		$(".options li").removeClass("selected")
+			stem.toggleClass("selected")
 
-		if (stem.hasClass("selected")) {
-			var stem_lines = $('.line[data-stem="' + stem.attr("id") + '"]')
+			$(".stems li")
+				.not(stem)
+				.removeClass("selected")
 
-			stem_lines.each(function () {
-				var $option = $(this).data("option")
-				$('.options li[id="' + $option + '"]').addClass("selected")
-			})
+			$(".options li").removeClass("selected")
 
-			$(".options").addClass("ready")
-		} else {
-			$(".options").removeClass("ready")
+			if (stem.hasClass("selected")) {
+				var stem_lines = $('.line[data-stem="' + stem.attr("id") + '"]')
+
+				stem_lines.each(function () {
+					var $option = $(this).data("option")
+					$('.options li[id="' + $option + '"]').addClass("selected")
+				})
+
+				$(".options").addClass("ready")
+			} else {
+				$(".options").removeClass("ready")
+			}
 		}
 	});
 
 	$(".options li").on("click", function () {
 		if ($(".options").hasClass("ready")) {
-			$(this).toggleClass("selected")
+			if(!$(this).hasClass("active"))
+			{
+				$(this).toggleClass("selected")
 
-			var stem = $(".stems li.selected"),
-				option = $(this)
+				var stem = $(".stems li.selected"),
+					option = $(this)
 
-			if (!line_exists(stem, option)) {
-				drawLine(stem, option)
-			} else {
-				$(
-					'.line[data-stem="' +
-					stem.attr("id") +
-					'"][data-option="' +
-					option.attr("id") +
-					'"]'
-				).remove()
+				if (!line_exists(stem, option)) {
+					drawLine(stem, option)
+				} else {
+					$(
+						'.line[data-stem="' +
+						stem.attr("id") +
+						'"][data-option="' +
+						option.attr("id") +
+						'"]'
+					).remove()
+				}
+
+				var stem_lines = $('.line[data-stem="' + stem.attr("id") + '"]')
+
+				stem_lines.length > 0
+					? stem.addClass('matched')
+					: stem.removeClass('matched')
+
+				$(this).addClass("active");
+				$(".stems li").removeClass("selected");
+				$(this).removeClass("selected");
+				$(".options").removeClass("ready")
 			}
-
-			var stem_lines = $('.line[data-stem="' + stem.attr("id") + '"]')
-
-			stem_lines.length > 0
-				? stem.addClass('matched')
-				: stem.removeClass('matched')
 		}
 	})
 

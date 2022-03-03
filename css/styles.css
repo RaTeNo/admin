@@ -1061,7 +1061,7 @@ aside .menu .item > a
 
     display: flex;
 
-    padding: 0 26px 0 43px;
+    padding: 0 35px 0 43px;
 
     transition: background .2s linear;
     text-decoration: none;
@@ -2451,6 +2451,10 @@ aside .menu .sub_menu a
     margin-left: 30px;
 }
 
+.articles .row.not_slide {
+
+}
+
 
 .articles .list > * + *
 {
@@ -2497,6 +2501,15 @@ aside .menu .sub_menu a
     object-fit: cover;
 }
 
+.articles .article .thumb img.small{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height:auto;
+    max-width: 70%;
+    max-height: 70%;
+}
 
 .articles .article .info
 {
@@ -3726,6 +3739,9 @@ aside .menu .sub_menu a
     padding-left: 26px;
 
     transition: color .2s linear;
+    display: block;
+    text-decoration: none;
+
 }
 
 .lecture_steps .steps .step:before
@@ -3786,6 +3802,10 @@ aside .menu .sub_menu a
 .lecture_steps .steps .step + .step.active:after
 {
     background: #49dabf;
+}
+
+.lecture_steps .steps .step + .step.not_line:after{
+    background: #eaeaea;
 }
 
 
@@ -4803,6 +4823,10 @@ aside .menu .sub_menu a
     display: block;
 }
 
+.test_data .step .answers .col > div{
+    margin-bottom: 10px;
+}
+
 
 .test_data .step .question
 {
@@ -4905,13 +4929,13 @@ aside .menu .sub_menu a
 .test_data .step .answers label .name
 {
     color: #64698f;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 16px;
 
     position: relative;
 
-    padding: 7px 11px 7px 30px;
+    padding: 9px 11px 9px 30px;
 
     transition: .2s linear;
 
@@ -5139,7 +5163,7 @@ aside .menu .sub_menu a
 {
     display: inline-block;
 
-    min-width: 104px;
+    min-width: 200px;
     max-width: 200px;
     padding: 7px 14px;
 
@@ -5319,9 +5343,9 @@ aside .menu .sub_menu a
 
 .test_data .step .result
 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 16px;
 
     position: relative;
 
@@ -7910,6 +7934,8 @@ aside .menu .sub_menu a
 
     transition: color .2s linear;
     letter-spacing: -.3px;
+    display: block;
+    text-decoration: none;
 }
 
 .course_info .steps .step:before
@@ -7977,6 +8003,10 @@ aside .menu .sub_menu a
 .course_info .steps .step + .step.active:after
 {
     background: #49dabf;
+}
+
+.course_info .steps .step + .step.not_line:after {
+    background: #eaeaea;
 }
 
 
@@ -8236,4 +8266,42 @@ footer .contacts .val a
 
     border-radius: 27px;
     background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+}
+
+
+
+
+
+.column-left {
+
+    z-index: 999;
+    width: 25%;
+}
+.column-right {
+
+    z-index: 999;
+    width: 25%;
+    right: 0;
+}
+
+.button-column {
+    width: 100%;
+}
+
+#canvas{
+    max-width: 100%;
+}
+
+.left-button button{
+    display: inline-block;
+    min-width: 104px;
+    max-width: 200px;
+    padding: 7px 14px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background: #ecebf5;
+    border-color: #0b00d8;
 }
