@@ -118,10 +118,9 @@ $(() => {
 	}
 
 	$(".stems li").on("click", function () {
-		stem = $(this)	
+		stem = $(this)
 
-		if(!stem.hasClass("matched"))
-		{
+		if (!stem.hasClass("matched")) {
 
 			stem.toggleClass("selected")
 
@@ -148,8 +147,7 @@ $(() => {
 
 	$(".options li").on("click", function () {
 		if ($(".options").hasClass("ready")) {
-			if(!$(this).hasClass("active"))
-			{
+			if (!$(this).hasClass("active")) {
 				$(this).toggleClass("selected")
 
 				var stem = $(".stems li.selected"),
@@ -350,6 +348,17 @@ $(() => {
 			type: 'inline'
 		}])
 	}
+
+
+	// Восстановление пароля
+	$('.auth .recovery .form').submit(function (e) {
+		e.preventDefault()
+
+		Fancybox.show([{
+			src: '#recovery_success_modal',
+			type: 'inline'
+		}])
+	})
 })
 
 

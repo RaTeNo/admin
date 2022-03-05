@@ -24,6 +24,12 @@
         padding: 20px;
     }
 
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 16px;
+        right: 16px;
+    }
+
 
 
     /*----------------
@@ -1022,6 +1028,33 @@
 
 
 
+    /*----------
+        Auth
+    ----------*/
+    .auth .data
+    {
+        width: 100%;
+        padding: 40px 24px;
+    }
+
+
+    .auth .contacts
+    {
+        width: 100%;
+        padding: 40px 24px;
+
+        border: none;
+        border-top: 2px solid #020027;
+    }
+
+
+    .auth .contacts .item .val
+    {
+        margin-top: 4px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -1045,8 +1078,6 @@
 
 
 
-
-
     /*-----------
         PopUp
     -----------*/
@@ -1057,7 +1088,27 @@
     }
 
 
-    .articles .row.not_slide > *{
+    .articles .row.not_slide > *
+    {
         width: calc(100%);
+    }
+
+
+
+    #register_code_modal
+    {
+        padding: 40px 64px;
+    }
+
+
+    #recovery_success_modal
+    {
+        padding: 40px;
+    }
+
+    #recovery_success_modal .modal_desc
+    {
+        font-size: 16px;
+        line-height: 22px;
     }
 }

@@ -40,18 +40,72 @@
 	<body>
 		<div class="wrap white">
 			<div class="main">
-				<section class="error_info">
-					<div class="info">
-						<div class="title">Страницы не существует</div>
+				<section class="auth">
+					<section class="data">
+						<div class="login">
+							<div class="title">Вход в систему</div>
 
-						<div class="desc">Вы попали на несуществующую страницу. Вернитесь на главную или напишите в поддержку если считаете что произошла ошибка</div>
+							<form action="" class="form">
+								<div class="field">
+									<input type="text" name="" value="" class="input" placeholder="Введите логин">
+									<div class="label">Логин</div>
+								</div>
 
-						<a href="/" class="link">Вернуться на главную</a>
-					</div>
+								<div class="field">
+									<input type="password" name="" value="" class="input" placeholder="Введите пароль">
+									<div class="label">Пароль</div>
+								</div>
 
-					<div class="code">
-						<img data-src="images/error404.svg" alt="" class="lozad">
-					</div>
+								<div class="submit">
+									<button type="submit" class="submit_btn">Войти</button>
+								</div>
+
+								<div class="bottom">
+									<div class="remember">
+										<input type="checkbox" name="remember" id="remember_check" checked>
+										<label for="remember_check">Запомнить меня</label>
+									</div>
+
+									<div class="recovery_link">
+										<a href="/">Забыли пароль?</a>
+									</div>
+								</div>
+
+								<div class="links">
+									<div class="or"><span>ИЛИ</span></div>
+
+									<div><a href="/" class="btn">Зарегестрироваться</a></div>
+
+									<div><button type="button" class="btn modal_btn" data-content="#register_code_modal">Зарегестрироваться c кодом</button></div>
+								</div>
+							</form>
+						</div>
+					</section>
+
+					<section class="contacts">
+						<div class="info">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Адрес</div>
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Электронная почта</div>
+								<div class="val">company1@gmail.com</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Телефон</div>
+								<div class="val">+79219879988</div>
+							</div>
+						</div>
+					</section>
 				</section>
 			</div>
 		</div>
@@ -60,6 +114,22 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="modal" id="register_code_modal">
+			<div class="modal_title">Введите код регистрации</div>
+
+			<form action="" class="form">
+				<div class="field">
+					<input type="text" name="" value="" class="input" placeholder="Введите код">
+					<div class="label">Код регистрации</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Вернуться на страницу входа</button>
+				</div>
+			</form>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->

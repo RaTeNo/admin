@@ -371,11 +371,13 @@
         scrollbar-width: thin !important;
     }
 
-    .articles .row.not_slide {
+    .articles .row.not_slide
+    {
         display: flex;
-        padding: 0;
-        margin-right: 0;
+
         width: auto;
+        margin-right: 0;
+        padding: 0;
     }
 
 
@@ -416,14 +418,15 @@
         margin-left: 20px;
     }
 
-    .articles .row.not_slide > *{
+    .articles .row.not_slide > *
+    {
         width: calc(100%/3 - 24px);
-        margin-left: 24px;
         margin-bottom: 24px;
+        margin-left: 24px;
     }
 
-    .articles .row.not_slide> * + *{
-
+    .articles .row.not_slide > * + *
+    {
     }
 
 
@@ -1275,6 +1278,116 @@
     .error_info .code img
     {
         width: 440px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .data
+    {
+        width: calc(100% - 320px);
+    }
+
+
+    .auth .data .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-bottom: 40px;
+    }
+
+    .auth .data .title:before
+    {
+        bottom: -8px;
+
+        width: 80px;
+        height: 2px;
+    }
+
+
+
+    .auth .login
+    {
+        width: 330px;
+    }
+
+
+
+    .auth .form .label
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .auth .form .recovery_link
+    {
+        margin-right: 0;
+    }
+
+
+    .auth .form .links
+    {
+        margin-top: 20px;
+    }
+
+    .auth .form .links > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+
+    .auth .contacts
+    {
+        width: 320px;
+    }
+
+
+    .auth .contacts .info
+    {
+        width: 232px;
+    }
+
+
+    .auth .contacts .logo
+    {
+        margin-bottom: 32px;
+    }
+
+    .auth .contacts .logo img
+    {
+        width: 200px;
+    }
+
+
+    .auth .contacts .desc
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        margin-top: 8px;
+    }
+
+
+    .auth .contacts .item
+    {
+        margin-top: 20px;
+    }
+
+    .auth .contacts .item .name
+    {
+        font-size: 17px;
+    }
+
+    .auth .contacts .item .val
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        margin-top: 8px;
     }
 
 

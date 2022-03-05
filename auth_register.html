@@ -40,18 +40,77 @@
 	<body>
 		<div class="wrap white">
 			<div class="main">
-				<section class="error_info">
-					<div class="info">
-						<div class="title">Страницы не существует</div>
+				<section class="auth">
+					<section class="data">
+						<div class="register">
+							<div class="title">Регистрация</div>
 
-						<div class="desc">Вы попали на несуществующую страницу. Вернитесь на главную или напишите в поддержку если считаете что произошла ошибка</div>
+							<form action="" class="form">
+								<div class="field">
+									<input type="text" name="" value="" class="input" placeholder="Введите имя">
+									<div class="label">Ваше имя</div>
+								</div>
 
-						<a href="/" class="link">Вернуться на главную</a>
-					</div>
+								<div class="field">
+									<input type="text" name="" value="" class="input" placeholder="Введите логин">
+									<div class="label">Логин</div>
+								</div>
 
-					<div class="code">
-						<img data-src="images/error404.svg" alt="" class="lozad">
-					</div>
+								<div class="field">
+									<input type="password" name="" value="" class="input" placeholder="Придумайте пароль">
+									<div class="label">Пароль</div>
+								</div>
+
+								<div class="field">
+									<select name="">
+										<option value="0" data-display="Выберите из списка"></option>
+										<option value="1">Менеджер</option>
+										<option value="2">Старший менеджер</option>
+										<option value="3">Редактор</option>
+										<option value="4">Директор</option>
+										<option value="5">Работник</option>
+									</select>
+
+									<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+
+									<div class="label">Ваша роль</div>
+								</div>
+
+								<div class="submit">
+									<button type="submit" class="submit_btn">Зарегестрироваться</button>
+								</div>
+
+								<div class="has_account">
+									Уже есть аккаунт? <a href="/">Войти</a>
+								</div>
+							</form>
+						</div>
+					</section>
+
+					<section class="contacts">
+						<div class="info">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Адрес</div>
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Электронная почта</div>
+								<div class="val">company1@gmail.com</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Телефон</div>
+								<div class="val">+79219879988</div>
+							</div>
+						</div>
+					</section>
 				</section>
 			</div>
 		</div>

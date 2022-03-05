@@ -271,4 +271,46 @@
         width: 400px;
         margin: 0 auto;
     }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .data
+    {
+        width: calc(100% - 296px);
+    }
+
+
+
+    .auth .contacts
+    {
+        width: 296px;
+    }
+
+
+    .auth .contacts .info
+    {
+        width: 216px;
+    }
+
+
+    .auth .contacts .desc
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    .auth .contacts .item .name
+    {
+        font-size: 16px;
+    }
+
+    .auth .contacts .item .val
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

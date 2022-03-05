@@ -19,6 +19,10 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
+	// Кастомный select
+	$('select').niceSelect()
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
@@ -29,7 +33,22 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
+	Fancybox.defaults.template = {
+		closeButton: '<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>',
+	}
+
 	// Всплывающие окна
+	$('body').on('click', '.modal_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
+
 	$('body').on('click', '.modal .close_btn', function (e) {
 		e.preventDefault()
 

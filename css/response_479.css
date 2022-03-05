@@ -30,6 +30,12 @@
         padding: 16px;
     }
 
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 12px;
+        right: 12px;
+    }
+
 
 
     /*----------------
@@ -359,6 +365,26 @@
 
 
 
+    /*----------
+        Auth
+    ----------*/
+    .auth .data .title
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 36px;
+    }
+
+
+
+    .auth .contacts .logo img
+    {
+        width: 180px;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/
@@ -386,5 +412,18 @@
     {
         font-size: 17px;
         line-height: 23px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 24px;
+    }
+
+
+
+    #register_code_modal
+    {
+        padding: 40px;
     }
 }

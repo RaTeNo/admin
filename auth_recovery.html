@@ -40,18 +40,48 @@
 	<body>
 		<div class="wrap white">
 			<div class="main">
-				<section class="error_info">
-					<div class="info">
-						<div class="title">Страницы не существует</div>
+				<section class="auth">
+					<section class="data">
+						<div class="recovery">
+							<div class="title">Восстановление пароля</div>
 
-						<div class="desc">Вы попали на несуществующую страницу. Вернитесь на главную или напишите в поддержку если считаете что произошла ошибка</div>
+							<form action="" class="form">
+								<div class="field">
+									<input type="tel" name="" value="" class="input" placeholder="Введите логин">
+									<div class="label">Номер телефона</div>
+								</div>
 
-						<a href="/" class="link">Вернуться на главную</a>
-					</div>
+								<div class="submit">
+									<button type="submit" class="submit_btn">Восстановить пароль</button>
+								</div>
+							</form>
+						</div>
+					</section>
 
-					<div class="code">
-						<img data-src="images/error404.svg" alt="" class="lozad">
-					</div>
+					<section class="contacts">
+						<div class="info">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+
+								<div class="desc">Описание первой компании 123</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Адрес</div>
+								<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Электронная почта</div>
+								<div class="val">company1@gmail.com</div>
+							</div>
+
+							<div class="item">
+								<div class="name">Телефон</div>
+								<div class="val">+79219879988</div>
+							</div>
+						</div>
+					</section>
 				</section>
 			</div>
 		</div>
@@ -60,6 +90,17 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="modal" id="recovery_success_modal">
+			<div class="modal_title">Проверьте сообщения</div>
+
+			<div class="modal_desc">Мы прислали ваш пароль на телефон +7(937)–*****–21</div>
+
+			<div class="links">
+				<div><a href="/">Вернуться на страницу входа</a></div>
+			</div>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->
