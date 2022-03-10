@@ -1288,6 +1288,10 @@ aside .menu .item > a.sub_link.open .arrow
     transform: rotate(180deg);
 }
 
+aside .menu .item > a.sub_link + .sub_menu{
+    display: block;
+}
+
 
 aside .menu .sub_menu
 {
@@ -1318,6 +1322,10 @@ aside .menu .sub_menu a
     text-decoration: none;
 
     opacity: .6;
+}
+
+aside .menu .sub_menu a.active{
+    opacity: 1;
 }
 
 
@@ -1970,6 +1978,11 @@ aside .menu .sub_menu a
 
     border-radius: 7px 7px 15px 15px;
     background: #fff;
+    transition: 0.3s;
+}
+
+.courses .course:hover{
+    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, 0.035));
 }
 
 
@@ -9129,4 +9142,18 @@ footer .contacts .val a
     border-color: #0b00d8;
     border-radius: 16px;
     background: #ecebf5;
+}
+
+
+.no_padding{
+    padding-top:0px  !important;
+}
+
+.image_simulator img{
+    width: 100%;
+    max-width: 100%;
+}
+
+footer .logo{
+    max-width: 250px;
 }

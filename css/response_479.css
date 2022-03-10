@@ -426,4 +426,12 @@
     {
         padding: 40px;
     }
+
+    .error_info .code{
+        order:-1;
+    }
+
+    .persons .person .avatar + .name{
+        min-height: 38px;
+    }
 }
