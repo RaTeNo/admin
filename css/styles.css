@@ -7307,14 +7307,14 @@ aside .menu .sub_menu a.active{
 
 .dialog .image_wrap .image
 {
-    position: relative;
+    /*position: relative;
 
     overflow: hidden;
 
     padding-bottom: 44.55%;
 
     border-radius: 10px;
-    background: #ddd;
+    background: #ddd;*/
 }
 
 .dialog .image_wrap .image:after
@@ -7341,11 +7341,14 @@ aside .menu .sub_menu a.active{
 {
     opacity: 1;
 }
-
+.dialog .image_wrap .image img{
+    max-width: 100%;
+    width: 100%;
+}
 
 .dialog .image_wrap .image svg
 {
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
 
@@ -7356,7 +7359,13 @@ aside .menu .sub_menu a.active{
 
     border-radius: inherit;
 
-    object-fit: cover;
+    object-fit: cover;*/
+
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    top: 0;
 }
 
 
