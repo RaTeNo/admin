@@ -7366,6 +7366,7 @@ aside .menu .sub_menu a.active{
     display: block;
     width: 100%;
     top: 0;
+    height: 100%;
 }
 
 
