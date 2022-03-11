@@ -4982,6 +4982,7 @@ aside .menu .sub_menu a.active{
     border: 2px solid transparent;
     border-radius: 16px;
     background: #f2f1fa;
+    display: inline-block;
 }
 
 .test_data .step .answers label.error .name
@@ -5184,7 +5185,7 @@ aside .menu .sub_menu a.active{
 .test_data .step .couples li
 {
     color: #64698f;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 14px;
 

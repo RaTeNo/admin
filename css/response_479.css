@@ -434,4 +434,9 @@
     .persons .person .avatar + .name{
         min-height: 38px;
     }
+
+    .test_data .step .couples li span{
+        max-width: 155px;
+        min-width: 155px;
+    }
 }
