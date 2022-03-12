@@ -1288,6 +1288,10 @@ aside .menu .item > a.sub_link.open .arrow
     transform: rotate(180deg);
 }
 
+aside .menu .item > a.sub_link + .sub_menu{
+    display: block;
+}
+
 
 aside .menu .sub_menu
 {
@@ -1318,6 +1322,10 @@ aside .menu .sub_menu a
     text-decoration: none;
 
     opacity: .6;
+}
+
+aside .menu .sub_menu a.active{
+    opacity: 1;
 }
 
 
@@ -1970,6 +1978,11 @@ aside .menu .sub_menu a
 
     border-radius: 7px 7px 15px 15px;
     background: #fff;
+    transition: 0.3s;
+}
+
+.courses .course:hover{
+    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, 0.035));
 }
 
 
@@ -4969,6 +4982,7 @@ aside .menu .sub_menu a
     border: 2px solid transparent;
     border-radius: 16px;
     background: #f2f1fa;
+    display: inline-block;
 }
 
 .test_data .step .answers label.error .name
@@ -5171,7 +5185,7 @@ aside .menu .sub_menu a
 .test_data .step .couples li
 {
     color: #64698f;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 14px;
 
@@ -7294,14 +7308,14 @@ aside .menu .sub_menu a
 
 .dialog .image_wrap .image
 {
-    position: relative;
+    /*position: relative;
 
     overflow: hidden;
 
     padding-bottom: 44.55%;
 
     border-radius: 10px;
-    background: #ddd;
+    background: #ddd;*/
 }
 
 .dialog .image_wrap .image:after
@@ -7328,11 +7342,14 @@ aside .menu .sub_menu a
 {
     opacity: 1;
 }
-
+.dialog .image_wrap .image img{
+    max-width: 100%;
+    width: 100%;
+}
 
 .dialog .image_wrap .image svg
 {
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
 
@@ -7343,7 +7360,14 @@ aside .menu .sub_menu a
 
     border-radius: inherit;
 
-    object-fit: cover;
+    object-fit: cover;*/
+
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    top: 0;
+    height: 100%;
 }
 
 
@@ -9129,4 +9153,18 @@ footer .contacts .val a
     border-color: #0b00d8;
     border-radius: 16px;
     background: #ecebf5;
+}
+
+
+.no_padding{
+    padding-top:0px  !important;
+}
+
+.image_simulator img{
+    width: 100%;
+    max-width: 100%;
+}
+
+footer .logo{
+    max-width: 250px;
 }
