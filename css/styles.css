@@ -1496,7 +1496,7 @@ aside .menu .sub_menu a.active
 ----------------*/
 .text_block
 {
-    color: #505261;
+    color: var(--text_color);
     line-height: 19px;
 }
 
