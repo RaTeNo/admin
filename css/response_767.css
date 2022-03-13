@@ -462,6 +462,7 @@
 
     .feedback .line
     {
+        min-width: 0;
         padding: 20px;
 
         border: none;
@@ -469,6 +470,9 @@
         background: #fff;
         box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
 
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
@@ -480,30 +484,45 @@
 
     .feedback .line > *
     {
+        width: calc(50% - 10px) !important;
+        margin-bottom: 20px;
         padding: 0;
     }
 
     .feedback .line > * + *
     {
-        margin-top: 15px;
-
         border: none;
+    }
+
+
+    .feedback .line > *.col_actions
+    {
+        width: 100% !important;
+        margin-bottom: 0;
     }
 
 
     .feedback .line .links
     {
         width: calc(100% + 15px);
-        margin-top: 5px;
 
         justify-content: flex-end;
+    }
+
+    .feedback .line .links > *
+    {
+        width: calc(50% - 15px);
     }
 
     .feedback .line .links a
     {
         font-weight: 500;
 
+        display: block;
+
         padding: 9px 22px;
+
+        text-align: center;
 
         border: none;
         border-radius: 16px;
@@ -687,11 +706,14 @@
     }
 
 
-    .dialog .head .what_do_link
+    .dialog .head .what_do
     {
         top: 12px;
         right: 12px;
+    }
 
+    .dialog .head .what_do .btn
+    {
         padding: 8px 12px;
     }
 

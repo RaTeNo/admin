@@ -267,6 +267,19 @@
     }
 
 
+    .simulator_item .dialog .data
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .simulator_item .dialog .message .audio_message .audio_wave
+    {
+        width: 145px;
+    }
+
+
 
     /*------------
         Dialog
@@ -385,6 +398,16 @@
 
 
 
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .line > *
+    {
+        width: 100% !important;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/
@@ -427,16 +450,43 @@
         padding: 40px;
     }
 
-    .error_info .code{
-        order:-1;
+    .error_info .code
+    {
+        order: -1;
     }
 
-    .persons .person .avatar + .name{
+    .persons .person .avatar + .name
+    {
         min-height: 38px;
     }
 
-    .test_data .step .couples li span{
-        max-width: 155px;
+    .test_data .step .couples li span
+    {
         min-width: 155px;
+        max-width: 155px;
+    }
+
+
+
+    #simulator_over_modal,
+    #confirm_modal
+    {
+        padding: 32px;
+    }
+
+
+    #confirm_modal .btns
+    {
+        margin-top: 24px;
+    }
+
+    #confirm_modal .btns .btn
+    {
+        width: 100%;
+    }
+
+    #confirm_modal .btns .btn + .btn
+    {
+        margin-top: 12px;
     }
 }

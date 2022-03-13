@@ -349,6 +349,20 @@ $(() => {
 		}])
 	}
 
+	if ($('#simulator_over_modal').length) {
+		Fancybox.show([{
+			src: '#simulator_over_modal',
+			type: 'inline'
+		}])
+	}
+
+	if ($('#confirm_modal').length) {
+		Fancybox.show([{
+			src: '#confirm_modal',
+			type: 'inline'
+		}])
+	}
+
 
 	// Восстановление пароля
 	$('.auth .recovery .form').submit(function (e) {

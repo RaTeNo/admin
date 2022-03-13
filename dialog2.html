@@ -288,7 +288,13 @@
 											<div class="name">Василий Иванович</div>
 										</div>
 
-										<a href="/" class="what_do_link">Что делать?</a>
+										<div class="what_do modal_cont">
+											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Что делать?</button>
+
+											<div class="mini_modal" id="what_do_modal">
+												Это аудиотренажер. Прослушайте сообщение и запишите свой ответ.
+											</div>
+										</div>
 									</div>
 
 
@@ -403,6 +409,20 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="modal" id="confirm_modal">
+			<svg class="icon"><use xlink:href="images/sprite.svg#ic_next_arrow"></use></svg>
+
+			<div class="modal_title">Вы уверены, что<br> хотите выйти?</div>
+
+			<div class="modal_desc">Ваш процесс будет потерян</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Продолжить</button>
+				<button class="btn red">Выйти</button>
+			</div>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->

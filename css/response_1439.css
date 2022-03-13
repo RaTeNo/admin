@@ -704,16 +704,6 @@
     .simulator_item .label
     {
         font-size: 15px;
-
-        margin-bottom: 12px;
-    }
-
-
-    .simulator_item .message
-    {
-        line-height: 19px;
-
-        padding: 12px 16px;
     }
 
 
@@ -744,7 +734,7 @@
         font-size: 17px;
     }
 
-    .dialog .head .what_do_link
+    .dialog .head .what_do
     {
         top: 20px;
         right: 20px;

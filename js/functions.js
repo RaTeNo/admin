@@ -56,6 +56,38 @@ $(() => {
 	})
 
 
+	// Мини всплывающие окна
+	$('.mini_modal_btn').click(function (e) {
+		e.preventDefault()
+
+		const modalId = $(this).data('modal-id')
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini_modal_btn').removeClass('active')
+			$(this).addClass('active')
+
+			$('.mini_modal').removeClass('active')
+			$(modalId).addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+
+
 	// Моб. версия
 	fiestResize = false
 
