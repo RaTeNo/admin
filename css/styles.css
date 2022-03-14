@@ -119,16 +119,17 @@ input[type=number]
 -------------------*/
 :root
 {
-    --bg: linear-gradient(0deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .95)), #0a00c5;
+    --bg: linear-gradient(0deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .95)), var(--main_color);
     --sidebar_width: 296px;
     --scroll_width: 17px;
     --text_color: #353352;
     --font_size: 14px;
     --font_size_title: 20px;
     --font_family: 'Ubuntu', 'Arial', sans-serif;
-    --main_color: #0a00c5;
+    /*--main_color: #0a00c5;*/
+    --main_color: #ff0000;
     --color_title: #020027;
-    --color_light: linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), #0a00c5;
+    --color_light: linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), var(--main_color);
 }
 
 
@@ -1458,7 +1459,7 @@ aside .menu .sub_menu a.active
     text-decoration: none;
 
     border-radius: 16px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 .block_head .all_link .arrow
