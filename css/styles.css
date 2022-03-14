@@ -130,6 +130,7 @@ input[type=number]
     --main_color: #ff0000;
     --color_title: #020027;
     --color_light: linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), var(--main_color);
+    --color_light_anima: rgba(255, 0, 0, 0.05);
 }
 
 
@@ -137,14 +138,14 @@ input[type=number]
 {
     color: #fff;
 
-    background: #0b00d8;
+    background: var(--main_color);
 }
 
 ::-moz-selection
 {
     color: #fff;
 
-    background: #0b00d8;
+    background: var(--main_color);
 }
 
 
@@ -183,12 +184,12 @@ html.custom_scroll ::-webkit-scrollbar
 
 html.custom_scroll ::-webkit-scrollbar-thumb
 {
-    background-color: #0b00d8;
+    background-color: var(--main_color);
 }
 
 html.custom_scroll
 {
-    scrollbar-color: #0b00d8 #ccc;
+    scrollbar-color: var(--main_color) #ccc;
     scrollbar-width: thin;
 }
 
@@ -1074,7 +1075,7 @@ aside
     width: var(--sidebar_width);
     padding: 68px 0;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), #0a00c5;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), var(--main_color);
 }
 
 
@@ -1412,7 +1413,7 @@ aside .menu .sub_menu a.active
 
 .block_head .icon svg
 {
-    color: #4a58e1;
+    color: var(--main_color);
 
     display: block;
 
@@ -2199,7 +2200,7 @@ aside .menu .sub_menu a.active
     margin-top: 15px;
 
     border-radius: 50px;
-    background: #ebf1fc;
+    background: var(--color_light);
 }
 
 .courses .course .progress .line
@@ -3810,7 +3811,7 @@ aside .menu .sub_menu a.active
     padding: 9px 30px;
 
     border-radius: 16px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
@@ -4919,7 +4920,7 @@ aside .menu .sub_menu a.active
     margin-right: 5px;
 
     border-radius: 50%;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 
     justify-content: center;
     align-items: center;
@@ -5769,7 +5770,7 @@ aside .menu .sub_menu a.active
     padding: 8px 12px;
 
     border-radius: 16px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 
     order: 2;
 }
@@ -5873,7 +5874,7 @@ aside .menu .sub_menu a.active
     white-space: nowrap;
 
     border-radius: 45px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
@@ -5895,7 +5896,7 @@ aside .menu .sub_menu a.active
 
     text-align: center;
 
-    border: 1px solid rgba(11, 0, 216, .5);
+    border: 1px solid var(--main_color);
     border-radius: 15px;
     background: #fff;
 }
@@ -5938,7 +5939,7 @@ aside .menu .sub_menu a.active
     transition: .2s linear;
     text-align: center;
 
-    border: 1px solid rgba(11, 0, 216, .5);
+    border: 1px solid var(--main_color);
     border-radius: 15px;
     background: #fff;
 
@@ -5951,10 +5952,10 @@ aside .menu .sub_menu a.active
 .quiz .steps .answers input:checked + label,
 .quiz .steps .answers label:hover
 {
-    color: #0b00d8;
+    color: var(--main_color);
 
-    border: 1px solid #0b00d8;
-    background: rgba(11, 0, 216, .05);
+    border: 1px solid var(--main_color);
+    background: var(--color_light_anima);
 }
 
 
@@ -6096,7 +6097,7 @@ aside .menu .sub_menu a.active
     text-decoration: none;
 
     border-radius: 45px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
@@ -6429,7 +6430,7 @@ aside .menu .sub_menu a.active
     padding: 9px 14px;
 
     border-radius: 16px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
@@ -6546,7 +6547,7 @@ aside .menu .sub_menu a.active
     margin-right: 10px;
 
     border-radius: 50%;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 
     justify-content: center;
     align-items: center;
@@ -6731,7 +6732,7 @@ aside .menu .sub_menu a.active
     padding: 9px 11px;
 
     border-radius: 16px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
@@ -7016,7 +7017,7 @@ aside .menu .sub_menu a.active
     margin-right: 10px;
 
     border-radius: 50%;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 
     justify-content: center;
     align-items: center;
@@ -7190,7 +7191,7 @@ aside .menu .sub_menu a.active
     transition: color .2s linear;
 
     border-radius: 16px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 .dialog .message .prompt .yes_btn span + span
@@ -7263,7 +7264,7 @@ aside .menu .sub_menu a.active
 .dialog .message.answer .info
 {
     border-radius: 21px 21px 0 21px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 .dialog .message.answer .name
@@ -7518,7 +7519,7 @@ aside .menu .sub_menu a.active
     padding: 15px;
 
     border-radius: 21px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 
     justify-content: flex-start;
     align-items: center;
@@ -7708,7 +7709,7 @@ aside .menu .sub_menu a.active
 
 .dialog .upload .process .name span
 {
-    color: #0700ba;
+    color: var(--main_color);
     font-weight: 700;
 }
 
@@ -7730,7 +7731,7 @@ aside .menu .sub_menu a.active
     width: 0;
     height: 4px;
 
-    background: #0600ba;
+    background: var(--main_color);
 }
 
 
@@ -8079,7 +8080,7 @@ aside .menu .sub_menu a.active
 
     text-align: center;
 
-    border: 1px solid rgba(11, 0, 216, .5);
+    border: 1px solid var(--main_color);
     border-radius: 15px;
     background: #fff;
 }
@@ -8122,7 +8123,7 @@ aside .menu .sub_menu a.active
     transition: .2s linear;
     text-align: center;
 
-    border: 1px solid rgba(11, 0, 216, .5);
+    border: 1px solid var(--main_color);
     border-radius: 15px;
     background: #fff;
 
@@ -8136,10 +8137,10 @@ aside .menu .sub_menu a.active
 .simulator_actions .steps .answers input:checked + label,
 .simulator_actions .steps .answers label:hover
 {
-    color: #0b00d8;
+    color: var(--main_color);
 
-    border: 1px solid #0b00d8;
-    background: rgba(11, 0, 216, .05);
+    border: 1px solid var(--main_color);
+    background: var(--color_light_anima);
 }
 
 
@@ -8147,8 +8148,8 @@ aside .menu .sub_menu a.active
 {
     color: #ff4d4d;
 
-    border: 1px solid #ff4d4d;
-    background: rgba(255, 77, 77, .05);
+    border: 1px solid var(--main_color);
+    background: var(--color_light_anima);
 }
 
 
@@ -8157,7 +8158,7 @@ aside .menu .sub_menu a.active
     color: #12a72a;
 
     border: 1px solid #12a72a;
-    background: rgba(18, 167, 42, .05);
+    background: var(--color_light_anima);
 }
 
 
@@ -8412,7 +8413,7 @@ aside .menu .sub_menu a.active
     text-decoration: none;
 
     border-radius: 20px;
-    background: linear-gradient(93.27deg, #0b00d8 6.37%, #0500af 95.29%);
+    background: var(--main_color);
 }
 
 
@@ -8639,7 +8640,7 @@ aside .menu .sub_menu a.active
     text-decoration: none;
 
     border-radius: 55px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
@@ -9282,7 +9283,7 @@ footer
     margin: auto -40px 0 !important;
     padding: 40px 158px 40px 40px;
 
-    background: #dbe9ff;
+    background: #fff;
 
     justify-content: space-between;
     align-items: flex-start;
@@ -9408,7 +9409,7 @@ footer .contacts .val a
     text-align: center;
 
     border-radius: 27px;
-    background: linear-gradient(135.48deg, #0b00d8 2%, #0500af 96.5%);
+    background: var(--main_color);
 }
 
 
