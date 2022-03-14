@@ -127,7 +127,7 @@ input[type=number]
     --font_size_title: 20px;
     --font_family: 'Ubuntu', 'Arial', sans-serif;
     /*--main_color: #0a00c5;*/
-    --main_color: #ff0000;
+    --main_color: #9900ff;
     --color_title: #020027;
     --color_light: linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), var(--main_color);
     --color_light_anima: rgba(255, 0, 0, 0.05);
