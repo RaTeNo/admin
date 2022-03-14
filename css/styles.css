@@ -7529,7 +7529,7 @@ aside .menu .sub_menu a.active
 
 .dialog .add_audio .audio_message .btn
 {
-    color: #0b00d8;
+    color: var(--main_color);
 
     display: flex;
 
@@ -8148,7 +8148,7 @@ aside .menu .sub_menu a.active
 {
     color: #ff4d4d;
 
-    border: 1px solid var(--main_color);
+    border: 1px solid #ff4d4d;
     background: var(--color_light_anima);
 }
 
