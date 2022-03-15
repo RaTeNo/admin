@@ -2058,11 +2058,13 @@ aside .menu .sub_menu a.active
 
     border-radius: 7px 7px 15px 15px;
     background: #fff;
+    top:0;
 }
 
 .courses .course:hover
 {
     filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    top:-10px;
 }
 
 
