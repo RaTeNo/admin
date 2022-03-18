@@ -317,7 +317,7 @@
 											</div>
 
 											<div class="video_message">
-												<button class="thumb">
+												<button class="thumb modal_btn" data-content="#video_modal">
 													<img data-src="images/tmp/video_message_thumb.jpg" alt="" class="lozad">
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
 												</button>
@@ -338,7 +338,7 @@
 
 										<div class="message answer new">
 											<div class="video_message">
-												<button class="thumb">
+												<button class="thumb modal_btn" data-content="#video_modal">
 													<img data-src="images/tmp/video_message_thumb2.jpg" alt="" class="lozad">
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
 												</button>
@@ -406,6 +406,14 @@
 				</section>
 			</div>
 		</div>
+
+		<section class="modal" id="video_modal">
+			<video class="video-player" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
 
 
 		<div class="supports_error">
