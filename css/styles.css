@@ -1308,7 +1308,7 @@ aside .menu .item > a.sub_link
 
 aside .menu .item > a.sub_link:before
 {
-    display: none;
+    
 }
 
 
@@ -2701,12 +2701,23 @@ aside .menu .sub_menu a.active
 }
 
 .articles .article .fixed_news{
-
+    z-index: 1;
+    position: absolute;
+    background: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .articles .article .fixed_news svg{
-    
+    width: 14px;
+    height: 14px;
 }
 
 
@@ -3517,6 +3528,22 @@ aside .menu .sub_menu a.active
     filter: blur(135.914px);
 }
 
+.files .table .breadcrumbs{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.files .table .breadcrumbs a{
+    font-size: 14px;
+    line-height: 130%;
+    color:#505261;
+    text-decoration: none;
+}
+
+.files .table .breadcrumbs .sep{
+    margin:0 7px;
+}
 
 .files .table .titles
 {
@@ -3526,7 +3553,7 @@ aside .menu .sub_menu a.active
 
     display: flex;
 
-    padding: 10px 20px;
+    padding: 20px 20px 10px;
 
     justify-content: space-between;
     align-items: center;
@@ -7123,6 +7150,7 @@ aside .menu .sub_menu a.active
     width: 11px;
     height: 15px;
     margin-left: 2px;
+    color:var(--main_color);
 }
 
 .dialog .message .audio_message .btn .icon + .icon,
@@ -7506,6 +7534,7 @@ aside .menu .sub_menu a.active
     flex-direction: column;
 
     padding: 0 80px 50px;
+    align-items: center;
 }
 
 
@@ -7733,7 +7762,39 @@ aside .menu .sub_menu a.active
     height: 33px;
 }
 
+.dialog .time{
+    font-size: 19px;
+    line-height: 135%;
+    letter-spacing: -0.95px;
+    position: relative;
+    text-align: center;
+    color: rgb(53 51 82 / 50%);
+    margin-top: 10px;
+}
 
+.dialog .time:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #D11A1A;
+    border-radius: 50%;
+    left: -12px;
+    top: 9px;
+}
+
+.dialog  .limit_time{
+    font-size: 19px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.95px;
+    background: #D6DFFF;
+    border-radius: 21px;
+    padding:10px 20px;
+    margin-top: 20px;
+
+}
 
 .dialog .upload
 {
@@ -9732,6 +9793,23 @@ footer .contacts .val a
     margin-top: 36px;
 }
 
+#simulator_over_modal .show_report
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 32px;
+    text-align: center;
+    border-radius: 27px;
+    background: #D8D6EA;
+    text-decoration: none;
+    color:#000;
+}
+
 
 
 #confirm_modal
@@ -9857,4 +9935,21 @@ footer .contacts .val a
 footer .logo
 {
     max-width: 250px;
+}
+
+.message{
+    padding: 14px 52px 14px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.message.success{    
+    background: #27CC42;
+}
+
+.message.error{
+    background: #D11A1A;
 }
