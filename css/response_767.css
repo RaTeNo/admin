@@ -1087,6 +1087,28 @@
 
 
 
+    /*--------------
+        Settings
+    --------------*/
+    .settings .account_links .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .settings .data
+    {
+        padding: 24px;
+    }
+
+    .settings .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
     /*------------
         Footer
     ------------*/

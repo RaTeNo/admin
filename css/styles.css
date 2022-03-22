@@ -931,6 +931,7 @@ header .account .logout_link .icon
     line-height: 23px;
 
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 
@@ -9818,6 +9819,180 @@ aside .menu .sub_menu a.active
     margin-left: 10px;
 
     border-bottom: 1px dashed;
+}
+
+
+
+/*--------------
+    Settings
+--------------*/
+.settings .data
+{
+    width: calc(100% - 314px);
+    padding: 30px;
+
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+
+.settings .form
+{
+    --form_border_color: rgba(2,0,39,.5);
+    --form_focus_color: var(--main_color);
+    --form_error_color: red;
+    --form_border_radius: 22px;
+    --form_bg_color: transparent;
+    --form_placeholder_color: rgba(2,0,39,.5);
+}
+
+
+.settings .form ::-webkit-input-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+.settings .form :-moz-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+.settings .form :-ms-input-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+
+.settings .form .columns
+{
+    margin-left: calc(var(--form_columns_offset) * -1);
+
+    --form_columns_offset: 30px;
+}
+
+.settings .form .columns > *
+{
+    width: calc(50% - var(--form_columns_offset));
+    margin-left: var(--form_columns_offset);
+}
+
+
+.settings .form .line
+{
+    margin-bottom: 20px;
+}
+
+
+.settings .form .field
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.settings .form .label
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+
+    margin-bottom: 10px;
+}
+
+
+.settings .form .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 14px;
+    font-weight: 500;
+
+    display: block;
+
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+
+    transition: border-color .2s linear;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+
+    order: 2;
+}
+
+.settings .form .input:-webkit-autofill
+{
+    -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
+}
+
+
+.settings .form .submit_btn
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+    padding: 14px 32px;
+
+    border-radius: 55px;
+    background: var(--main_color);
+}
+
+
+
+.settings .account_links
+{
+    width: 284px;
+    margin-left: auto;
+    padding: 20px;
+
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.settings .account_links .title
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.settings .account_links .items > * + *
+{
+    margin-top: 10px;
+}
+
+.settings .account_links .items a
+{
+    color: currentColor;
+    font-size: 14px;
+    line-height: 130%;
+
+    display: inline-block;
+
+    transition: .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+
+    opacity: .5;
+}
+
+.settings .account_links .items a:hover,
+.settings .account_links .items a.active
+{
+    font-weight: 500;
+
+    opacity: .8;
 }
 
 

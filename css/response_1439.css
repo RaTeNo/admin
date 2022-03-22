@@ -883,6 +883,35 @@
 
 
 
+    /*--------------
+        Settings
+    --------------*/
+    .settings .data
+    {
+        width: calc(100% - 264px);
+        padding: 28px;
+    }
+
+
+    .settings .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+
+    .settings .account_links
+    {
+        width: 240px;
+        padding: 24px;
+    }
+
+    .settings .account_links .title
+    {
+        font-size: 19px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

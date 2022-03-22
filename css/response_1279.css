@@ -1392,6 +1392,25 @@
 
 
 
+    /*--------------
+        Settings
+    --------------*/
+    .settings .account_links
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .settings .data
+    {
+        width: 100%;
+
+        order: 3;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
