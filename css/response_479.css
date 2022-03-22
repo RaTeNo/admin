@@ -443,6 +443,23 @@
 
 
 
+    /*--------------
+        Settings
+    --------------*/
+    .settings .form .birthday > *
+    {
+        width: calc(50% - 10px);
+    }
+
+    .settings .form .birthday > *.month
+    {
+        width: calc(100% - 10px);
+
+        order: 2;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/

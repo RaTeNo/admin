@@ -1410,6 +1410,18 @@
     }
 
 
+    .settings .form .avatar
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .settings .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+
 
     /*------------
         Footer

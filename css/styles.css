@@ -9864,6 +9864,76 @@ aside .menu .sub_menu a.active
 }
 
 
+.settings .form .avatar
+{
+    margin-bottom: 31px;
+}
+
+.settings .form .avatar input
+{
+    display: none;
+}
+
+.settings .form .avatar label
+{
+    position: relative;
+
+    display: block;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    cursor: pointer;
+
+    border: 2px solid #ceccf3;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.settings .form .avatar label img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+.settings .form .avatar label .icon
+{
+    color: #fff;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: var(--main_color);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.settings .form .avatar label .icon svg
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+}
+
+
 .settings .form .columns
 {
     margin-left: calc(var(--form_columns_offset) * -1);
@@ -9928,6 +9998,223 @@ aside .menu .sub_menu a.active
 .settings .form .input:-webkit-autofill
 {
     -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
+}
+
+
+.settings .form textarea
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 14px;
+    line-height: 16px;
+
+    display: block;
+
+    width: 100%;
+    height: 150px;
+    padding: 14px;
+
+    resize: none;
+    transition: border-color .2s linear;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.settings .form textarea::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+}
+
+
+.settings .form .birthday
+{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: -10px;
+    margin-left: -10px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.settings .form .birthday > *
+{
+    position: relative;
+
+    width: 88px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.settings .form .birthday > *.month
+{
+    width: calc(100% - 206px);
+}
+
+
+.settings .form select
+{
+    display: none;
+}
+
+.settings .form .nice-select
+{
+    position: relative;
+
+    display: block;
+
+    order: 2;
+}
+
+
+.settings .form .nice-select .current
+{
+    color: var(--form_placeholder_color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 42px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    height: 44px;
+    padding: 0 39px 0 14px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.settings .form .nice-select.open .current
+{
+    border-color: var(--form_focus_color);
+}
+
+.settings .form .nice-select .current.selected
+{
+    color: var(--text_color);
+}
+
+
+.settings .form .nice-select .list
+{
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+
+    transition: .2s linear;
+
+    opacity: 0;
+    border: 1px solid var(--form_border_color);
+    border-radius: 11px;
+    background: #fff;
+}
+
+.settings .form .nice-select.open .list
+{
+    top: calc(100% + 10px);
+
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+.settings .form .nice-select .list .scrollbar
+{
+    overflow: auto;
+
+    max-height: 240px;
+    padding: 10px 0;
+}
+
+.settings .form .nice-select .list .scrollbar::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+}
+
+
+.settings .form .nice-select .list .list_item
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+    padding: 10px 14px;
+
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.settings .form .nice-select .list .list_item:empty
+{
+    display: none;
+}
+
+.settings .form .nice-select .list .list_item:hover,
+.settings .form .nice-select .list .list_item.selected
+{
+    background: #eeeffc;
+}
+
+
+.settings .form .nice-select ~ .arrow
+{
+    color: #020027;
+
+    position: absolute;
+    z-index: 9;
+    top: 18px;
+    right: 15px;
+
+    display: block;
+
+    width: 11px;
+    height: 7px;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: .5;
+}
+
+.settings .form .nice-select.open ~ .arrow
+{
+    color: var(--main_color);
+
+    transform: rotate(180deg);
+}
+
+
+.settings .form .input:focus
+{
+    border-color: var(--form_focus_color);
+}
+
+.settings .form .input:focus ~ .label,
+.settings .form .nice-select.open ~ .label
+{
+    color: var(--form_focus_color);
 }
 
 
