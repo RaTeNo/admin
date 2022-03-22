@@ -12,7 +12,7 @@ $(() => {
 
 
 	// Видео плеер
-	if ('function' === typeof MediaPlayer) {
+	/*if ('function' === typeof MediaPlayer) {
 		[].forEach.call(document.querySelectorAll('audio[controls], video[controls]'), function (media) {
 			player = media.player = new MediaPlayer(media, {
 				svgs: {
@@ -37,7 +37,7 @@ $(() => {
 
 			player.media.currentTime = player.media.currentTime + 30
 		})
-	}
+	}*/
 
 
 	// Тест - Поля ввода в тексте
