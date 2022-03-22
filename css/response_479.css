@@ -408,6 +408,41 @@
 
 
 
+    /*--------------
+        Comments
+    --------------*/
+    .comments .children
+    {
+        padding-left: 30px;
+    }
+
+
+    .comments .comment .avatar
+    {
+        font-size: 18px;
+        line-height: 20px;
+
+        width: 44px;
+        height: 44px;
+
+        border-radius: 8px;
+    }
+
+
+    .comments .comment .data
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    .comments .comment .exp
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/
