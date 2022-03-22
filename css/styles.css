@@ -1181,19 +1181,39 @@ aside .menu .item > a:after
 
 aside .menu .item .icon
 {
+    color: rgba(255,255,255,.6);
+
+    position: relative;
+
     display: flex;
 
     width: 28px;
     height: 28px;
 
-    transition: opacity .2s linear;
-
-    opacity: .6;
+    transition: color .2s linear;
 
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+aside .menu .item .icon.point:before
+{
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    border-radius: 50%;
+    background: #ff4762;
 }
 
 aside .menu .item .icon > *
@@ -1256,13 +1276,17 @@ aside .menu .item .icon + span
 
 aside .menu .item .count
 {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
 
-    width: 24px;
-    height: 24px;
-    margin-left: auto;
+    position: absolute;
+    top: 3px;
+    right: 100%;
+
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 
     text-align: center;
 
@@ -1291,11 +1315,20 @@ aside .menu .item .arrow
 aside .menu .item > a:hover:after,
 aside .menu .item > a.active:after,
 aside .menu .item > a.active:before,
-aside .menu .item > a.active .icon,
-aside .menu .item > a.active .icon + span,
-aside .menu .item > a.active .arrow
+aside .menu .item > a.active .arrow,
+aside .menu .item > a.active .icon + span
 {
     opacity: 1;
+}
+
+aside .menu .item > a.active .icon
+{
+    color: #fff;
+}
+
+aside .menu .item > a.open .icon.point:before
+{
+    opacity: 0;
 }
 
 
@@ -1323,15 +1356,20 @@ aside .menu .item > a.sub_link.open:after
     border-radius: 15px 15px 0 0;
 }
 
+aside .menu .item > a.sub_link:before
+{
+    left: -28px;
+}
+
 aside .menu .item > a.sub_link.open .arrow
 {
     transform: rotate(180deg);
 }
 
-aside .menu .item > a.sub_link + .sub_menu
+/* aside .menu .item > a.sub_link + .sub_menu
 {
     display: block;
-}
+} */
 
 
 aside .menu .sub_menu
@@ -1355,19 +1393,19 @@ aside .menu .sub_menu > * + *
 
 aside .menu .sub_menu a
 {
-    color: #fff;
+    color: rgba(255, 255, 255, .6);
     line-height: 24px;
+
+    position: relative;
 
     display: block;
 
     text-decoration: none;
-
-    opacity: .6;
 }
 
 aside .menu .sub_menu a.active
 {
-    opacity: 1;
+    color: #fff;
 }
 
 
