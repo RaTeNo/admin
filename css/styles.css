@@ -7216,13 +7216,17 @@ aside .menu .sub_menu a.active
 
 .dialog .message .audio_message .btn .icon
 {
-    color: var(--main_color);
+    color: #fff;
 
     display: block;
 
     width: 11px;
     height: 15px;
     margin-left: 2px;
+}
+
+.dialog .message.answer  .audio_message .btn .icon{
+    color: var(--main_color);
 }
 
 .dialog .message .audio_message .btn .icon + .icon,
