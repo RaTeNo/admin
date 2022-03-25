@@ -790,6 +790,10 @@ header .account .user
     flex-wrap: wrap;
 }
 
+header .account .user .name{
+    max-width: 300px;
+}
+
 
 header .account .avatar
 {
