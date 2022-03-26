@@ -373,6 +373,19 @@ $(() => {
 			type: 'inline'
 		}])
 	})
+
+
+	$('.auth .form .view_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.field')
+
+		!$(this).hasClass('active')
+			? parent.find('.input').attr('type', 'text')
+			: parent.find('.input').attr('type', 'password')
+
+		$(this).toggleClass('active')
+	})
 })
 
 

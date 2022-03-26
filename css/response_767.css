@@ -934,6 +934,21 @@
     }
 
 
+    .dialog .add_audio
+    {
+        padding: 0 24px 40px;
+    }
+
+
+    .dialog  .limit_time
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        padding: 12px 15px;
+    }
+
+
 
     /*-----------------------
         Simulator actions
@@ -1057,6 +1072,12 @@
     {
         width: 100%;
         padding: 40px 24px;
+    }
+
+
+    .auth .register.success .info > *
+    {
+        font-size: 17px;
     }
 
 

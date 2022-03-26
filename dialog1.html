@@ -95,13 +95,27 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
 						</div>
 
-						<div class="account">
-							<a href="/" class="user">
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
 								<div class="avatar">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
 									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
 								</div>
-							</a>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -168,21 +182,30 @@
 								</div>
 
 								<div class="item">
-									<a href="#" class="sub_link">
-										<div class="icon icon5 point">
+									<a href="/">
+										<div class="icon icon5">
 											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
 										</div>
 										<span>Тренажеры</span>
-										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
 									</a>
+								</div>
 
-									<div class="sub_menu">
-										<div><a href="/">Аудио тренажеры</a></div>
-										<div><a href="/">
-											<span class="count">3</span>
-											<span>Тренажеры действий</span>
-										</a></div>
-									</div>
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
 								</div>
 
 								<div class="item">

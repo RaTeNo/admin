@@ -308,6 +308,16 @@
 
 
 
+    .dialog  .limit_time
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 12px 32px;
+    }
+
+
+
     /*-----------------------
         Simulator actions
     -----------------------*/
@@ -387,6 +397,13 @@
         line-height: 28px;
 
         margin-bottom: 36px;
+    }
+
+
+    .auth .register.success .info > *
+    {
+        font-size: 16px;
+        line-height: 20px;
     }
 
 

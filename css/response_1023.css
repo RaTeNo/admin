@@ -283,6 +283,20 @@
     }
 
 
+    .auth .form .error_text
+    {
+        margin-bottom: 16px;
+
+        white-space: normal;
+    }
+
+
+    .auth .form .error_icon
+    {
+        left: -24px;
+    }
+
+
 
     .auth .contacts
     {
