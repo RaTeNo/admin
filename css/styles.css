@@ -790,6 +790,10 @@ header .account .user
     flex-wrap: wrap;
 }
 
+header .account .user .name{
+    max-width: 300px;
+}
+
 
 header .account .avatar
 {
@@ -7216,13 +7220,17 @@ aside .menu .sub_menu a.active
 
 .dialog .message .audio_message .btn .icon
 {
-    color: var(--main_color);
+    color: #fff;
 
     display: block;
 
     width: 11px;
     height: 15px;
     margin-left: 2px;
+}
+
+.dialog .message.answer  .audio_message .btn .icon{
+    color: var(--main_color);
 }
 
 .dialog .message .audio_message .btn .icon + .icon,
@@ -10839,7 +10847,7 @@ footer .logo
     max-width: 250px;
 }
 
-.message
+.message_new
 {
     color: #fff;
     font-size: 14px;
@@ -10851,12 +10859,12 @@ footer .logo
     border-radius: 12px;
 }
 
-.message.success
+.message_new.success
 {
     background: #27cc42;
 }
 
-.message.error
+.message_new.error
 {
     background: #d11a1a;
 }
