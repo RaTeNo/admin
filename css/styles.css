@@ -431,7 +431,6 @@ button
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
 }
 
 .back_link .icon
@@ -1429,7 +1428,7 @@ aside .menu .item > a.open .icon.point:before
 
 aside .menu .item > a.sub_link
 {
-    margin-right: 22px;
+    /*margin-right: 22px;*/
     margin-left: 28px;
     padding-right: 20px;
     padding-left: 15px;
@@ -1440,15 +1439,15 @@ aside .menu .item > a.sub_link
 
 aside .menu .item > a.sub_link:after
 {
-    transition: border-radius .2s linear;
+    /*transition: border-radius .2s linear;
 
     border-radius: 15px;
-    background: rgba(0, 0, 0, .12);
+    background: rgba(0, 0, 0, .12);*/
 }
 
 aside .menu .item > a.sub_link.open:after
 {
-    border-radius: 15px 15px 0 0;
+    /*border-radius: 15px 15px 0 0;*/
 }
 
 aside .menu .item > a.sub_link:before
@@ -4964,8 +4963,9 @@ aside .menu .sub_menu a.active
 
     display: inline-block;
 
-    width: 104px;
+    min-width: 104px;
     height: 32px;
+    padding:0 10px;
 
     text-align: center;
     vertical-align: top;
@@ -5330,8 +5330,9 @@ aside .menu .sub_menu a.active
 
     display: block;
 
-    width: 104px;
+    min-width: 104px;
     height: 34px;
+    padding:0 10px;
 
     text-align: center;
 
@@ -7142,6 +7143,7 @@ aside .menu .sub_menu a.active
     line-height: 14px;
 
     display: block;
+    max-width: 300px;
 
     padding: 11px 13px 12px 14px;
 
@@ -7530,7 +7532,7 @@ aside .menu .sub_menu a.active
 .dialog .message .prompt .text
 {
     color: #061058;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 135%;
 
     display: none;
@@ -11164,9 +11166,11 @@ footer .logo
     font-weight: 700;
     line-height: 19px;
 
-    padding: 14px 52px 14px 20px;
+    padding: 14px 20px 14px 20px;
 
     border-radius: 12px;
+    display: flex;
+        justify-content: space-between;
 }
 
 .message_new.success

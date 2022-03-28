@@ -3,6 +3,10 @@ $(() => {
 	WW = $(window).width()
 
 
+	$(".close_new_message").click(function (e) {
+		e.preventDefault()
+		$(this).parent().slideUp();
+	});
 	// Боковая колонка - Меню
 	$('aside .menu .item > a.sub_link').click(function (e) {
 		e.preventDefault()
