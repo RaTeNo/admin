@@ -1439,4 +1439,49 @@
         width: 100%;
         margin-bottom: 24px;
     }
+
+
+    .courses .row.not_slide
+    {
+        display: flex;
+
+        width: auto;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .courses .row.not_slide > *
+    {
+        width: calc(100%/3 - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    .courses .row.not_slide > * + *
+    {
+    }
+
+    .simulators .row.not_slide
+    {
+        display: flex;
+
+        width: auto;
+        margin-right: 0;
+        padding: 0;
+        overflow: initial;
+    }
+
+    .simulators .row.not_slide > *
+    {
+        width: calc(100%/3 - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+
+    }
+
+    .simulators .row.not_slide > * + *
+    {
+    }
+
+
 }

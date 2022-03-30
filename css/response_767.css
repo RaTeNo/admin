@@ -801,7 +801,7 @@
     {
         font-size: 12px;
 
-        margin-left: 8px;
+        margin-left: 3px;
     }
 
 
@@ -1185,5 +1185,25 @@
     {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    .text_block table{
+        width: 720px;
+    }
+
+    .files .table .breadcrumbs{
+        border:none;
+        padding: 20px 0;
+    }
+
+
+     .courses .row.not_slide > *
+    {
+        width: calc(100%);
+    }
+
+     .simulators .row.not_slide > *
+    {
+        width: calc(100%);
     }
 }

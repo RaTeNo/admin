@@ -737,7 +737,7 @@ header .account
 {
     display: flex;
 
-    margin-left: 30px;
+    margin-left: 15px;
 
     align-self: center;
     justify-content: flex-start;
@@ -745,6 +745,49 @@ header .account
     align-content: center;
     flex-wrap: wrap;
 }
+
+header .account .support_link
+{
+    color: #a3b7d9;
+
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    position: relative;
+}
+
+
+
+header .account .support_link.active:before{
+    content:"";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #D11A1A;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    right: 0;
+    top:0;
+    border-radius: 50%;
+}
+
+header .account .support_link .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
 
 
 header .account .settings_link
@@ -1391,8 +1434,9 @@ aside .menu .item .count
 
 aside .menu .item .arrow
 {
-    position: relative;
-    top: 1px;
+    position: absolute;
+    top: 11px;
+    right: 23px;
 
     display: block;
 
@@ -2789,6 +2833,35 @@ aside .menu .sub_menu a.active
     flex: 1 0 auto;
 }
 
+.articles .article .info .top_news{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.articles .article .comment_news
+{
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 0.5;
+}
+
+.articles .article .author{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.articles .article .author img{
+    margin-right: 5px;
+    border-right: 7px;
+}
+
+.articles .article .comment_news svg
+{   
+    width: 10px;
+    height: 10px;
+}
 
 .articles .article .name
 {
@@ -2832,7 +2905,6 @@ aside .menu .sub_menu a.active
     font-size: 12px;
     line-height: 14px;
 
-    margin-top: 15px;
 }
 
 .articles .article .fixed_news
@@ -2859,6 +2931,7 @@ aside .menu .sub_menu a.active
 {
     width: 14px;
     height: 14px;
+    color: var(--main_color);
 }
 
 
@@ -4965,7 +5038,7 @@ aside .menu .sub_menu a.active
 
     min-width: 104px;
     height: 32px;
-    padding:0 10px;
+    padding: 0 10px;
 
     text-align: center;
     vertical-align: top;
@@ -5332,7 +5405,7 @@ aside .menu .sub_menu a.active
 
     min-width: 104px;
     height: 34px;
-    padding:0 10px;
+    padding: 0 10px;
 
     text-align: center;
 
@@ -7143,8 +7216,8 @@ aside .menu .sub_menu a.active
     line-height: 14px;
 
     display: block;
-    max-width: 300px;
 
+    max-width: 300px;
     padding: 11px 13px 12px 14px;
 
     border-radius: 7px;
@@ -7819,7 +7892,6 @@ aside .menu .sub_menu a.active
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
 }
 
 .dialog .add_audio .audio_message .btn
@@ -7868,7 +7940,7 @@ aside .menu .sub_menu a.active
 {
     overflow: hidden;
 
-    width: 250px;
+    width: 210px;
     max-width: 100%;
     margin-top: -16px;
     margin-bottom: -17px;
@@ -7981,10 +8053,10 @@ aside .menu .sub_menu a.active
 }
 
 
-.dialog  .limit_time
+.dialog .limit_time
 {
-    font-size: 19px;
-    line-height: 33px;
+    font-size: 14px;
+    line-height: 18px;
 
     margin-top: 20px;
     padding: 10px 20px;
@@ -11166,11 +11238,13 @@ footer .logo
     font-weight: 700;
     line-height: 19px;
 
+    display: flex;
+
     padding: 14px 20px 14px 20px;
 
     border-radius: 12px;
-    display: flex;
-        justify-content: space-between;
+
+    justify-content: space-between;
 }
 
 .message_new.success
@@ -11181,4 +11255,23 @@ footer .logo
 .message_new.error
 {
     background: #d11a1a;
+}
+
+.audio-record .loading svg
+{
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+
+    animation: button_loader_spin 1s linear infinite;
+}
+
+@keyframes button_loader_spin
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }
