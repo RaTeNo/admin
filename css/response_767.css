@@ -283,7 +283,7 @@
     {
         position: relative;
 
-        padding: 20px 20px 54px 20px;
+        padding: 20px 20px 70px 20px;
 
         border-radius: 15px;
         background: #fff;
@@ -312,7 +312,7 @@
     .folders .folder .col_last_date
     {
         position: absolute;
-        bottom: 0;
+        bottom: 16px;
         left: 0;
 
         display: flex;
@@ -1205,5 +1205,11 @@
      .simulators .row.not_slide > *
     {
         width: calc(100%);
+    }
+
+    .folders .folder .col_actions{
+        bottom: 20px;
+        position: absolute;
+        margin: 0;
     }
 }
