@@ -9398,7 +9398,8 @@ aside .menu .sub_menu a.active
 {
     position: absolute;
     z-index: 9;
-    top: calc(100% + 30px);
+    top: auto !important;
+    bottom: 110%;
     left: 0;
 
     visibility: hidden;
@@ -9416,7 +9417,8 @@ aside .menu .sub_menu a.active
 
 .auth .form .nice-select.open .list
 {
-    top: calc(100% + 10px);
+    top: auto !important;
+    bottom: 110%;
 
     visibility: visible;
 
@@ -10343,6 +10345,14 @@ aside .menu .sub_menu a.active
     border-bottom: 1px dashed;
 }
 
+.not_comment{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.not_comment img{
+    display: inline-block;
+}
 
 
 /*--------------

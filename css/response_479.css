@@ -558,4 +558,9 @@
     {
         margin-top: 12px;
     }
+
+    .block_head .title{
+        max-width: 200px;
+    }
+
 }

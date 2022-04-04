@@ -1212,4 +1212,9 @@
         position: absolute;
         margin: 0;
     }
+
+    
+    .notification .link{
+        margin-top:10px;
+    }
 }
