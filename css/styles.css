@@ -2588,10 +2588,29 @@ aside .menu .sub_menu a.active
 {
     color: currentColor;
 
-    display: inline-block;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 
     vertical-align: top;
     text-decoration: none;
+}
+
+.simulators .simulator .name .thumb {
+    position: relative;
+    overflow: hidden;
+    width: 39px;
+    height: 39px;
+    border-radius: 7px;
+    background: #ddd;
+}
+
+.simulators .simulator .name a .thumb + * {
+    width: calc(100% - 51px);
+    align-self: center;
 }
 
 
@@ -2854,7 +2873,7 @@ aside .menu .sub_menu a.active
 
 .articles .article .author img{
     margin-right: 5px;
-    border-right: 7px;
+    border-radius: 7px;
 }
 
 .articles .article .comment_news svg
@@ -3976,7 +3995,8 @@ aside .menu .sub_menu a.active
     width: 39px;
     height: 39px;
 
-    border-radius: 7px;
+    
+    border-radius: 50%;
     background: #c4cbd7;
 
     justify-content: center;
@@ -11376,4 +11396,53 @@ footer .logo
     {
         transform: rotate(360deg);
     }
+}
+
+
+
+.empty{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.empty div{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    opacity: 0.8;
+}
+
+.empty a{
+    color: #fff;
+    display: inline-block;
+    padding: 18px 42px 19px;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 55px;
+    background: var(--main_color);
+    margin-top: 20px;
+} 
+
+.title_setting{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+        margin-bottom: 20px;
+}
+
+audio{
+    width: 100%;
+}
+
+.message_test{
+    border: 1px solid var(--main_color);
+    padding: 20px;
+    display: inline-block !important;
+    margin-bottom: 50px;
+    border-radius: 30px;
 }

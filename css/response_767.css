@@ -1217,4 +1217,16 @@
     .notification .link{
         margin-top:10px;
     }
+
+    .empty.bg_block{
+        width: calc(100% + 44px) !important;
+    }
+
+    .message_test{
+        width: 100%;
+    }
+
+    .title_setting{
+        font-size: 19px;
+    }
 }

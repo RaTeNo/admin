@@ -51,7 +51,9 @@
 							<span>1243</span>
 						</div>
 
-						<div class="sep"></div>
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
 
 						<div class="account">
 							<a href="/" class="settings_link">
@@ -81,7 +83,7 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 						</button>
 
-						<div class="page_title">Сводка</div>
+						<div class="page_title">Файлы</div>
 
 						<div class="wallet">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
@@ -295,105 +297,63 @@
 
 
 						<section class="content">
-							<h1 class="page_title">Тренажеры</h1>
+							<div class="page_title">Проверка устройств</div>
 
-							<section class="simulators">
-								<div class="block_title">Тренажеры действий</div>
-								<div class="row not_slide">
-									<div class="simulator">
-										<div class="format orange">аудио формат</div>
+							<section class="settings">
+								<div class="row">
+									<section class="data dialog">
+										<div class="title_setting">Проверка микрофона</div>
 
-										<div class="name">
-											<a href="/">Продажи сайтов</a>
+										<div class="add_audio audio-record">
+											<input type="checkbox" id="audio_record-icon" name="">
+											<label for="audio_record-icon" class="start_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
+											</label>
+
+											<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+
+											<div class="time">0:01</div>
 										</div>
 
-										<div class="questions_count">15 вопросов</div>
+										<div class="message message_test">		
+											<div class="audio_message">
+												<button class="btn" data-action="play">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_play"></use></svg>
 
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-											<div><a href="/" class="orange">История</a></div>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_pause"></use></svg>
+												</button>
+
+												<div class="audio_wave" data-file="https://wavesurfer-js.org/example/media/demo.wav"></div>
+
+												<div class="duration"></div>
+											</div>
 										</div>
 
-										<div class="last_date green">Последний запуск: 15.01.2021 в 15:45</div>
-									</div>
 
-									<div class="simulator">
-										<div class="format blue">видео формат</div>
 
-										<div class="name">
-											<a href="/">
-												<div class="thumb">
-													<img data-src="images/tmp/podcast_thumb.jpg" alt="" class="lozad">
-												</div>
-												<span>Что сделать заранее, чтобы 31 декабря не стоять у плиты</span>
-											</a>
+										<div class="title_setting">Проверка динамиков</div>
+
+										<audio
+									        controls
+									        src="images/t-rex-roar.mp3">
+									            Your browser does not support the
+									            <code>audio</code> element.
+									    </audio>
+
+									</section>
+
+
+									<section class="account_links">
+										<div class="title">Навигация</div>
+
+										<div class="items">
+											<div><a href="/">Личная информация</a></div>
+											<div><a class="active">Смена пароля</a></div>
+											<div><a href="/">Портфолио</a></div>
+											<div><a href="/">Опыт работы</a></div>
+											<div><a href="/">Контакты</a></div>
 										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue2">Продолжить</a></div>
-										</div>
-
-										<div class="last_date green">Последний запуск: 15.01.2021 в 15:45</div>
-									</div>
-
-									<div class="simulator">
-										<div class="format green">текстовый формат</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue2">Продолжить</a></div>
-											<div><a href="/" class="orange">История</a></div>
-										</div>
-
-										<div class="last_date green">Последний запуск: 15.01.2021 в 15:45</div>
-									</div>
-
-									<div class="simulator">
-										<div class="format blue">видео формат</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-									</div>
-								</div>
-							</section>
-
-
-							<section class="simulators">
-								<div class="block_title">Тренажеры действий</div>
-
-								<div class="row not_slide">
-									<div class="simulator">
-										<div class="format red">тренажер действий</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-											<div><a href="/" class="orange">История</a></div>
-										</div>
-
-										<div class="last_date green">Последний запуск: 15.01.2021 в 15:45</div>
-									</div>
+									</section>
 								</div>
 							</section>
 
