@@ -11446,3 +11446,15 @@ audio{
     margin-bottom: 50px;
     border-radius: 30px;
 }
+
+.test_data .step .question + .files{
+    margin-bottom: 20px;
+}
+
+.test_data .step .dialog .exp{
+    margin-top: 0;
+}
+
+.input_file{
+    margin: 15px 0;
+}

@@ -2,12 +2,12 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
-
-	$(".close_new_message").click(function (e) {
+	$('body').on('click', '.close_new_message', function (e) {
 		e.preventDefault()
 		$(this).parent().slideUp();
 	});
 	// Боковая колонка - Меню
+
 	$('aside .menu .item > a.sub_link').click(function (e) {
 		e.preventDefault()
 
@@ -120,6 +120,7 @@ $(() => {
 			? $(line).offset({ top: pointA.top, left: pointA.left })
 			: $(line).offset({ top: pointB.top, left: pointA.left })
 	}
+
 
 	$(".stems li").on("click", function () {
 		stem = $(this)
@@ -286,7 +287,7 @@ $(() => {
 		i++
 	})
 
-	$('.audio_message .btn').click(function () {
+	$('body').on('click', '.audio_message .btn', function (e) {
 		let index = $(this).data('index')
 
 		$(this).toggleClass('active')
@@ -295,27 +296,27 @@ $(() => {
 
 
 	// Диалог - Подсказка
-	$('.dialog .message .prompt .yes_btn').click(function (e) {
+	$('body').on('click', '.dialog .message .prompt .yes_btn', function (e) {
 		e.preventDefault()
 
 		$(this).toggleClass('active').closest('.prompt').find('.text').slideToggle(300)
 	})
 
-	$('.dialog .message .prompt .no_btn').click(function (e) {
+	$('body').on('click', '.dialog .message .prompt .no_btn', function (e) {
 		e.preventDefault()
 
 		$(this).closest('.prompt').slideUp(200)
 	})
 
 
-	$('.dialog .image_wrap .prompt_btn').click(function (e) {
+	$('body').on('click', '.dialog .image_wrap .prompt_btn', function (e) {
 		e.preventDefault()
 
 		$('.dialog .image_wrap .image .answer').addClass('show')
 	})
 
 
-	$('.dialog .image_wrap .image svg').click(function (e) {
+	$('body').on('click', '.dialog .image_wrap .image svg', function (e) {
 		e.preventDefault()
 
 		$('.dialog .image_wrap .image .answer').removeClass('success')
@@ -325,7 +326,7 @@ $(() => {
 		$('.dialog .error_text').fadeIn(300)
 	})
 
-	$('.dialog .image_wrap .image .answer').click(function (e) {
+	$('body').on('click', '.dialog .image_wrap .image .answer', function (e) {
 		e.stopPropagation()
 		e.preventDefault()
 
@@ -379,7 +380,7 @@ $(() => {
 	})
 
 
-	$('.auth .form .view_btn').click(function (e) {
+	$('body').on('click', '.auth .form .view_btn', function (e) {	
 		e.preventDefault()
 
 		let parent = $(this).closest('.field')
