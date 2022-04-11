@@ -531,7 +531,7 @@ button
 
 .modal .carousel__button.is-close
 {
-    display: none;
+    /*display: none;*/
 }
 
 

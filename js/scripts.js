@@ -270,6 +270,11 @@ $(() => {
 		})
 
 		inits[i].load(el.getAttribute('data-file'))
+
+		inits[i].on('pause', function () {
+		    $('.audio_message .btn.active').toggleClass('active');
+		});
+
 		i++
 	})
 
