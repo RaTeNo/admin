@@ -292,12 +292,61 @@ $(() => {
 		i++
 	})
 
+	let audio_wave_new;
+	let newWave;
+
 	$('body').on('click', '.audio_message .btn', function (e) {
 		let index = $(this).data('index')
 
 		$(this).toggleClass('active')
-		inits[index].playPause(inits[index])
+		if($(this).hasClass("btn_new"))
+		{
+			newWave.playPause(newWave)	
+		}
+		else
+		{
+			inits[index].playPause(inits[index])
+		}
+		
 	})
+
+
+	$(".test").on("click", function(e){
+		e.preventDefault();
+		$(".messages").append('<div class="message"><div class="photo"><img src="images/tmp/person_photo.jpg"></div><div class="info"><div class="name">Василий Иванович</div><div class="audio_message"><button class="btn btn_new" data-index="1" data-action="play"><svg class="icon"><use xlink:href="images/sprite.svg#ic_play"></use></svg><svg class="icon"><use xlink:href="images/sprite.svg#ic_pause"></use></svg></button><div class="audio_wave audio_wave_new" data-file="https://wavesurfer-js.org/example/media/demo.wav"></div><div class="duration duration_new"></div></div></div>					</div>');
+
+		audio_wave_new = document.querySelector('.audio_wave_new')
+		console.log(audio_wave_new);
+		newWave = WaveSurfer.create({
+			container: audio_wave_new,
+			waveColor: '#ABAAE2',
+			progressColor: audio_wave_new.classList.contains('light') ? '#fff' : '#0B00D8',
+			cursorColor: 'transparent',
+			barWidth: 2,
+			barRadius: 2,
+			cursorWidth: 0,
+			height: 66,
+			barGap: 2
+		})
+
+		newWave.load(audio_wave_new.getAttribute('data-file'))
+
+		newWave.on('finish', function () {
+		    $('.audio_message .btn.active').toggleClass('active');
+		});
+
+		setTimeout(() => {			
+			$('.audio_message .duration_new').each(function () {
+				$(this).text(sec2time(newWave.getDuration()))
+
+			})
+			$(".btn_new").toggleClass('active');
+			newWave.playPause(newWave)	
+		}, 1000)
+
+
+
+	});
 
 
 	// Диалог - Подсказка

@@ -46,6 +46,10 @@
         font-size: 22px;
     }
 
+    .page_title span{
+        max-width: calc(100% - 50px);
+    }
+
 
 
     /*-----------------
