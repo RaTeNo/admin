@@ -11611,3 +11611,15 @@ audio{
 .audio_media .media-current-time{
     display: none;
 }
+
+.audio_media.light .media-control.media-play{
+    color: var(--main_color); 
+    background: #fff;
+}
+
+.audio_media.light .media-text{
+    color:#fff;
+}
+.audio_media.light .media-meter{
+    background-color: #fff;
+}
