@@ -570,4 +570,8 @@
     .text_block figure img{
         width: 100%;
     }
+
+    .audio_media .media-slider{
+        padding:0;
+    }
 }

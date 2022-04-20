@@ -11445,6 +11445,8 @@ audio{
     display: inline-block !important;
     margin-bottom: 50px;
     border-radius: 30px;
+    max-width: 300px;
+    width: 100%;
 }
 
 .test_data .step .question + .files{
@@ -11604,4 +11606,8 @@ audio{
 
 .audio_media{
     width: 95%;
+}
+
+.audio_media .media-current-time{
+    display: none;
 }
