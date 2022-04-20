@@ -574,4 +574,8 @@
     .audio_media .media-slider{
         padding:0;
     }
+
+    .audio_media .media-remaining-time{
+        display: none;
+    }
 }
