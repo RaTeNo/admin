@@ -43,6 +43,17 @@ $(() => {
 		})
 	}*/
 
+	if ('function' === typeof MediaPlayer) {
+		[].forEach.call(document.querySelectorAll('audio[controls]'), function (media) {
+			player = media.player = new MediaPlayer(media, {
+				svgs: {
+					play: 'images/sprite.svg#ic_play',
+					pause: 'images/sprite.svg#ic_pause',
+				},
+			})
+		})		
+	}
+
 
 	// Тест - Поля ввода в тексте
 	var input = document.querySelectorAll('.test_data .step .answers .text .input'),
@@ -278,13 +289,13 @@ $(() => {
 		i++
 	})
 
-	setTimeout(() => {
+	/*setTimeout(() => {
 		i = 0
 		$('.audio_message .duration').each(function () {
 			$(this).text(sec2time(inits[i].getDuration()))
 			i++
 		})
-	}, 1000)
+	}, 1000)*/
 
 	i = 0
 	$('.audio_message .btn').each(function () {

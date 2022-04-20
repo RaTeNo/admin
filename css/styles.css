@@ -11458,3 +11458,150 @@ audio{
 .input_file{
     margin: 15px 0;
 }
+
+
+
+.audio_media  .media-toolbar {
+    align-items: center;
+    cursor: default;
+    direction: ltr;
+    display: flex;
+    flex-wrap: wrap
+}
+:-webkit-full-screen .audio_media  .media-toolbar {
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    position: absolute
+}
+:-moz-full-screen .audio_media  .media-toolbar {
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    position: absolute
+}
+:-ms-fullscreen .audio_media  .media-toolbar {
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    position: absolute
+}
+:fullscreen .audio_media  .media-toolbar {
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    position: absolute
+}
+.audio_media .media-hidden {
+    display: none
+}
+.audio_media .media-media {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative
+}
+.audio_media .media-control, .media-slider {
+    background-color: transparent;
+    border-style: none;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none
+}
+.audio_media .media-slider {
+    height: 2.5em;
+    padding: .625em .5em;
+    margin:0 5px;
+}
+.audio_media .media-slider:focus {
+    background-color: rgba(153, 153, 255, .25)
+}
+.audio_media .media-time {
+    flex-grow: 1;
+    flex-shrink: 1
+}
+.audio_media .media-volume {
+    flex-basis: 5em
+}
+.audio_media .media-range {
+    background-color: #ccc;
+    display: block;
+    font-size: 75%;
+    height: 8px;
+    width: 100%;
+    border-radius: 4px;
+}
+.audio_media .media-meter {
+    background-color: var(--main_color);
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 4px;
+}
+.audio_media .media-text {
+    color: #061058;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 9px;
+    opacity: .75;
+}
+.audio_media .media-control {
+    font-size: 75%;
+    line-height: 1;
+    padding: 1.16667em;
+    text-decoration: none
+}
+.audio_media .media-control:focus, .audio_media .media-control:hover {
+    background-color: rgba(153, 153, 255, .25)
+}
+.audio_media .media-symbol {
+    display: block;
+    fill: currentColor;
+    height: 1em;
+    width: 1em
+}
+.audio_media  .media-symbol[aria-hidden=true] {
+    display: none
+}
+
+.audio_media .media-mute, .audio_media .media-download, .audio_media .media-fullscreen, .audio_media .media-volume{
+    display: none;
+}
+
+.audio_media .media-control.media-play{
+    color: #fff;
+    display: flex;
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--main_color);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.audio_media{
+    width: 95%;
+}
