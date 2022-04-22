@@ -1201,7 +1201,7 @@ header .account .logout_link .icon
 aside
 {
     width: var(--sidebar_width);
-    padding: 68px 0;
+    padding: 50px 0;
 
     background: linear-gradient(0deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), var(--main_color);
 }
@@ -4910,6 +4910,8 @@ aside .menu .sub_menu a.active
     vertical-align: top;
     text-decoration: none;
     border-bottom: 1px dashed;
+    z-index: 100;
+    position: relative;
 }
 
 .folders .folder .links a.green {
