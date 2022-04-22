@@ -11151,10 +11151,14 @@ footer .contacts .val a
 
 #video_modal
 {
-    width: 704px;
+    width: auto;
     padding: 0;
 
     border-radius: 0;
+}
+
+#video_modal video{
+    max-height: 600px 
 }
 
 #video_modal .carousel__button.is-close

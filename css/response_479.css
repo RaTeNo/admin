@@ -578,4 +578,8 @@
     .audio_media .media-remaining-time{
         display: none;
     }
+
+    .steps .items{
+        overflow: hidden;
+    }
 }
