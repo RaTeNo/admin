@@ -15,6 +15,58 @@ $(() => {
 	})
 
 
+	// Аккордион
+	$('body').on('click', '.accordion .accordion_item .head', function (e) {
+		e.preventDefault()
+
+		const $item = $(this).closest('.accordion_item'),
+			$accordion = $(this).closest('.accordion')
+
+		if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}
+	})
+
+	$(".title_faq_result button").on("click", function(){
+		$(".js-search").val("");
+		$(".title_faq").show();
+        $(".title_faq_result").hide();
+        let	list = $(".accordion_item");
+        list.each(function(index) {	
+		    $(this).show();		  	   
+		});
+	});
+
+	$('body').on("keyup", '.js-search', function(event) {
+        let value = $(this).val();
+        if(value=="")
+        {
+        	$(".title_faq").show();
+        	$(".title_faq_result").hide();
+        }
+        else
+        {        	
+	        $(".title_faq").hide();
+	        $(".title_faq_result").show();	
+        }
+
+        let	list = $(".accordion_item");
+        list.each(function(index) {	
+		    let label = $(this).text();
+		    if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
+		        $(this).hide();
+		    } else {
+		        $(this).show();
+		    }		   
+		});
+    });  
+
+
 	// Видео плеер
 	/*if ('function' === typeof MediaPlayer) {
 		[].forEach.call(document.querySelectorAll('audio[controls], video[controls]'), function (media) {

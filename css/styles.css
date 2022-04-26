@@ -7594,7 +7594,7 @@ aside .menu .sub_menu a.active
     overflow: hidden;
 
     width: 100%;
-    padding-bottom: 51.09%;
+    padding-bottom: 100%;
 
     background: url(../images/ic_no_video.png) 50% no-repeat #696969;
 }
@@ -11165,8 +11165,8 @@ footer .contacts .val a
 {
     color: #fff;
 
-    top: -30px;
-    right: -30px;
+    top: -21px;
+    right: -10px;
 
     display: flex;
 }
@@ -11383,6 +11383,27 @@ footer .logo
 .message_new.error
 {
     background: #d11a1a;
+}
+
+.message_new.warning
+{
+    background: #0A00C5;
+}
+
+.message_new svg{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	flex-shrink: 0;
+}
+
+.message_new.warning{
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.message_new.warning button{
+	margin-left: auto;
 }
 
 .audio-record .loading svg
@@ -11634,7 +11655,7 @@ audio{
 /*Итоговое задание*/
 
 
-.total {
+section.total {
     width: calc(100%);
     padding: 30px;
     border-radius: 15px;
@@ -11788,6 +11809,16 @@ audio{
     border-radius: inherit;
     background: #d11a1a;
 }
+.total_flex input:checked ~ .start_btn {
+    color: #fff;
+}
+
+.total_flex input:checked ~ .start_btn:before {
+    width: 44px;
+    height: 44px;
+    animation: shadow-expansion .9s ease-in-out infinite alternate;
+    opacity: 1;
+}
 
 .total_flex .start_btn .icon {
     display: block;
@@ -11863,4 +11894,114 @@ audio{
 .page_title a{
     text-decoration: none;
     color: var(--main_color);
+}
+
+/*faq*/
+.faq .input{
+    background: #FFFFFF url(../images/search.svg) no-repeat 20px center;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 54px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px 0 50px;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu';
+}
+
+.title_faq{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top:30px;
+}
+.accordion_item{
+    background: #FFFFFF;
+    box-shadow: 2px 4px 60px rgb(41 44 124 / 10%);
+    border-radius: 8px;
+}
+
+
+.accordion_item .head{
+    padding-top:15px;
+    padding-bottom:15px;
+    min-height: 51px;
+    line-height: 19px;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.375px;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion_item .head:before{
+    content: "";
+    width: 8px;
+    background: #1A22E0;
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    border-radius:  10px  0  0 10px;
+}
+
+.accordion_item .data{
+    display: none;
+}
+
+.accordion_item + .accordion_item{
+    margin-top:15px;
+}
+
+.accordion_item .head .title{
+    padding-left:30px;
+}
+.accordion_item .head .icon
+{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    border: 8px solid transparent;
+    border-top: 8px solid #0A00C5;
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.accordion_item.active .head .icon{
+    transform: rotate(0deg);
+    top:22px;
+}
+
+.accordion_item.active .head{
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.accordion_item.active .head:before{
+    border-radius:  10px  0  0 0px;
+}
+.accordion_item .data .text_block{
+    padding: 15px 30px;
+}
+.title_faq_result{
+    display: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top:30px;
+}
+
+.accordion{
+    margin-bottom: 15px;
+}
+
+.title_faq_result button{
+    display: inline-block;
+    position: relative;
+    top: 3px;
 }
