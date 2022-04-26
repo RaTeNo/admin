@@ -11629,3 +11629,238 @@ audio{
 .audio_media.light .media-meter{
     background-color: #fff;
 }
+
+
+/*Итоговое задание*/
+
+
+.total {
+    width: calc(100%);
+    padding: 30px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.total .data{
+    margin-bottom: 20px;
+}
+
+.total .line {
+    border-top: 1px solid #D0D0D0;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-bottom: 20px;
+}
+
+.total_title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.total_text{
+    margin-bottom: 15px;
+}
+
+.total_file{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.total_file_img{
+
+}
+
+.total_file_desc{
+    width: calc(100% - 35px);
+    margin-top: -8px;
+    margin-bottom: -8px;
+    align-self: center;
+}
+
+.total_file_desc .name {
+    color: #505261;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+.total_file_desc .links {
+    display: flex;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.total_file_desc .links > * {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.total_file_desc .links a {
+    font-size: 12px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+
+.total_file_desc .links a.green
+{
+    color: #1d972b;
+}
+
+.total_file_desc .links a.blue
+{
+    color: #4a8be1;
+}
+
+.total_file_desc .links a.orange
+{
+    color: #ff9617;
+}
+
+.total_file_desc .links a.red
+{
+    color: #e14a4a;
+}
+
+.total_file_desc .links a.orange {
+    color: #ff9617;
+}
+
+.total_audio{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.total_flex{
+    display: flex;
+}
+
+.total_flex input {
+    display: none;
+}
+
+.total_flex .start_btn {
+    color: #d11a1a;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: color .2s linear;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #e9eaf8;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.total_flex .start_btn:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    content: '';
+    transition: .2s linear;
+    opacity: 0;
+    border-radius: inherit;
+    background: #d11a1a;
+}
+
+.total_flex .start_btn .icon {
+    display: block;
+    width: 24px;
+    height: 36px;
+}
+
+.total_audio_desc{
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E7E;
+    opacity: 0.8;
+    margin-left:20px;
+}
+
+.total .input_file{
+    margin:30px 0;
+}
+.input_file label{
+    display: block;
+    margin-bottom: 15px;
+}
+.total_form label {
+    margin-bottom: 15px;
+    display: block;
+}
+.total_form textarea {
+    font-family: var(--font_family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    width: 100%;
+    height: 107px;
+    padding: 11px 13px;
+    resize: none;
+    border: 1px solid #cecbea;
+    border-radius: 16px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.total_form button{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: var(--main_color);
+    order: 2;
+}
+
+.total_audio_media{
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.accepted{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: var(--main_color);
+}
+
+.total_date{
+    margin-bottom: 15px;
+    color: #6660A2;
+}
+
+.page_title a{
+    text-decoration: none;
+    color: var(--main_color);
+}
