@@ -11387,7 +11387,7 @@ footer .logo
 
 .message_new.warning
 {
-    background: #0A00C5;
+    background: var(--main_color);
 }
 
 .message_new svg{
@@ -12004,4 +12004,45 @@ section.total {
     display: inline-block;
     position: relative;
     top: 3px;
+}
+
+
+.thumb-wrap {
+      position: relative;
+      padding-bottom: 56.25%; 
+      height: 0;
+      overflow: hidden;
+}
+.thumb-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-width: 0;
+      outline-width: 0;
+}
+
+.faq_mt{
+    margin-top: 0;
+}
+
+.info_faq{
+    font-size: 14px;
+    line-height: 23px;
+    color: #6660A2;
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.info_faq .red{
+    color: rgba(225, 67, 67, 0.8);
+}
+
+.info_faq .green{
+    color: #77DA67;
+}
+
+.faq .test_data{
+    padding:0;
 }

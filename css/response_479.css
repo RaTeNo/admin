@@ -582,4 +582,8 @@
     .steps .items{
         overflow: hidden;
     }
+
+    .info_faq{
+        display: none;
+    }
 }
