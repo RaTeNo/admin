@@ -3728,6 +3728,14 @@ aside .menu .sub_menu a.active
     text-decoration: none;
 }
 
+.files .file.folder .data{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.8;
+    margin:7px 0;
+}
+
 
 
 .files .list > * + *
@@ -5269,7 +5277,7 @@ aside .menu .sub_menu a.active
     display: flex;
 
     width: 100%;
-    min-width: 1464px;
+    min-width: 936px;
 
     background: #f6faff;
 
@@ -5305,7 +5313,7 @@ aside .menu .sub_menu a.active
     display: flex;
 
     width: 100%;
-    min-width: 1464px;
+    min-width: 936px;
 
     transition: background .2s linear;
     text-decoration: none;
@@ -5570,8 +5578,8 @@ aside .menu .sub_menu a.active
 
 .feedback .col_answer
 {
-    width: 180px;
-    min-width: 180px;
+    width: 156px;
+    min-width: 156px;
 }
 
 .feedback .col_correct_answer
@@ -12047,3 +12055,6 @@ section.total {
     padding:0;
 }
 
+.m_r{
+    margin-right: auto;
+}
