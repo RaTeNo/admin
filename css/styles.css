@@ -11948,7 +11948,7 @@ section.total {
 .accordion_item .head:before{
     content: "";
     width: 8px;
-    background: #1A22E0;
+    background: var(--main_color);
     display: block;
     position: absolute;
     left:0;
@@ -12070,3 +12070,4 @@ section.total {
     max-height: 100%;
 
 }
+
