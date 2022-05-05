@@ -12060,9 +12060,10 @@ section.total {
 }
 
 .mob_header .logo{
-	max-width: 200px;
+	max-width: 160px;
     height: 50px;
     margin-left: 30px;
+    display: flex;
 }
 
 .mob_header .logo img{
