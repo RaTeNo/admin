@@ -9984,6 +9984,7 @@ aside .menu .sub_menu a.active
 
     width: 242px;
     max-width: 100%;
+    max-height: 50px;
 }
 
 
@@ -12059,11 +12060,17 @@ section.total {
     margin-right: auto;
 }
 
+
+
 .mob_header .logo{
 	max-width: 160px;
     height: 50px;
     margin-left: 30px;
     display: flex;
+}
+
+.mob_header .logo.m_l{
+    margin-left: 0px;
 }
 
 .mob_header .logo img{
