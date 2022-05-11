@@ -1172,7 +1172,7 @@
 
 
     .dialog .next_link,
-    .dialog .upload
+    .dialog .upload, .buttons_video .video_record
     {
         padding: 30px 30px 60px;
     }

@@ -51,7 +51,9 @@
 							<span>1243</span>
 						</div>
 
-						<div class="sep"></div>
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
 
 						<div class="account">
 							<a href="/" class="settings_link">
@@ -81,7 +83,7 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 						</button>
 
-						<div class="page_title">Сводка</div>
+						<div class="page_title">Файлы</div>
 
 						<div class="wallet">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
@@ -295,151 +297,73 @@
 
 
 						<section class="content">
-							<section class="dialog">
-								<section class="page_title">
-									<a href="/">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
-									</a>
-									<span>Тренажер</span>
-								</section>
+							<div class="page_title">Не могу зарегистрировать в сервисе</div>
 
-
-								<section class="data">
-									<div class="head">
-										<div class="count">Вопрос <span class="current">3</span> из <span class="total">5</span></div>
-
-										<div class="person">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-											</div>
-
-											<div class="name">Василий Иванович</div>
+							<section class="tiket">
+								<div class="data">
+									<div class="tiket_title">Чат с администратором</div>									
+									<form action="">
+										<div class="field">									
+											<textarea name="" id="" placeholder="Введите ответ"></textarea>
 										</div>
 
-										<div class="what_do modal_cont">
-											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Что делать?</button>
-
-											<div class="mini_modal" id="what_do_modal">
-												Это аудиотренажер. Прослушайте сообщение и запишите свой ответ.
-											</div>
+										<div class="field input_file">
+											<label>Прикрепить файлы</label>
+											<input type="file">
 										</div>
-									</div>
+										<button>Ответить</button>
+									</form>
+								</div>
 
-
-									<div class="messages">
-										<div class="message">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+								<div class="list_tiket">
+									<div class="item_tiket">
+										<div class="img"><img src="images/tmp/person_photo2.jpg" alt=""></div>
+										<div class="item_tiket_content">
+											<div class="item_tiket_name">Иван Петров <span>Администратор</span></div>
+											<div class="item_tiket_text">
+												Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.
 											</div>
-
-											<div class="info">
-												<div class="name">Василий Иванович</div>
-
-												<div class="text_message">Посмотрите видео и напишите свой ответ</div>
-											</div>
-										</div>
-
-										<div class="message">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-											</div>
-
-											<div class="video_message">
-												<button class="thumb modal_btn" data-content="#video_modal">
-													<img data-src="images/tmp/video_message_thumb.jpg" alt="" class="lozad">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
-												</button>
-											</div>
-										</div>
-
-										<div class="message">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-											</div>
-
-											<div class="info">
-												<div class="name">Василий Иванович</div>
-
-												<div class="text_message">Запишите и загрузите видео ответ</div>
-											</div>
-										</div>
-
-										<div class="message answer new">
-											<div class="video_message">
-												<button class="thumb modal_btn" data-content="#video_modal">
-													<img data-src="images/tmp/video_message_thumb2.jpg" alt="" class="lozad">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
-												</button>
-											</div>
-
-											<div class="photo">
-												<img data-src="images/tmp/person_photo2.jpg" alt="" class="lozad">
-											</div>
-										</div>
-
-										<div class="message new">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-											</div>
-
-											<div class="info">
-												<div class="name">Василий Иванович</div>
-
-												<div class="text_message">Спасибо! Ваш ответ принят! Можете перейти к следующему вопросу</div>
-											</div>
+											<div class="item_tiket_time">1 минуту назад</div>
 										</div>
 									</div>
+									<div class="item_tiket">
+										<div class="img"><img src="images/tmp/person_photo2.jpg" alt=""></div>
+										<div class="item_tiket_content">
+											<div class="item_tiket_name">Иван Петров <span>Администратор</span></div>
 
-
-									<!-- <div class="next_link">
-										<a href="/">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_next_arrow"></use></svg>
-										</a>
-									</div> -->
-
-
-									<div class="buttons_video">
-										<div class="upload">
-											<form id="upload_form" enctype="multipart/form-data" method="post">
-											    <input type="file" name="file1" id="file1" style="display: none;" onchange="uploadFile()">
-											    <label for="file1" class="start_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_upload"></use></svg>												
-											    </label>
-
-											    <div class="text_icon">Выбрать видео-файл</div>
-
-											    <div class="upload" style="display: none;">
-													<div class="process">
-														<div class="name">Идет загрузка файла:<br> sdk4lsdjsdfl4dsf.avi <span>(43%)</span></div>
-
-														<div class="progress">
-															<div class="bar" style="width: 0%;"></div>
-														</div>
+											<div class="item_tiket_text">
+												Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.
+												
+												<div class="audio_media">											
+													<audio
+												        controls
+												        src="images/t-rex-roar.mp3">
+												            Your browser does not support the
+												            <code>audio</code> element.
+												    </audio>
+												</div>
+												<div class="item_tiket_file">										
+													<div class="item_tiket_file_img">
+														<img src="images/attachment.svg" alt="">
 													</div>
 
-													<span class="cancel_btn" id="cancel">
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
-													</span>
-												</div>
+													<div class="item_tiket_file_desc">
+														<div class="name">filename.doc</div>
 
-												<div class="next_link" style="display: none;">
-													<a href="/">
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_next_arrow"></use></svg>
-													</a>
+														<div class="links">
+															<div><a href="/" class="green">Скачать</a></div>
+															<div><a href="/" class="blue">Посмотреть</a></div>
+														</div>
+													</div>									
 												</div>
-											</form>
-										</div>
-										<div class="video_record">
-											<button class="modal_btn" data-content='#video_record'>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_record"></use></svg>
-											</button>
-											<div class="text_icon">Записать с камеры</div>
+											</div>
+											<div class="item_tiket_time">1 минуту назад</div>
 										</div>
 									</div>
-									
-								</section>
+								</div>
 							</section>
 
+							
 
 							<footer>
 								<div class="logo">
@@ -475,47 +399,6 @@
 				</section>
 			</div>
 		</div>
-
-		<section class="modal" id="video_modal">
-			<video class="video-player" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
-			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
-			</video>
-		</section>
-
-
-		<section class="modal video_record_modal" id="video_record">
-			<div class="video_empty">
-				<svg><use xlink:href="images/sprite.svg#ic_video_empty"></use></svg>
-				<span>Что бы загрузился видео-поток, нажмите “Разрешить” в левом верхнем углу</span>
-			</div>
-			<div class="buttons_video">				
-				<div class="video_record">
-					<button  class="modal_btn" data-content='#video_record2'>
-						<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_record"></use></svg>
-					</button>
-					<div class="text_icon">Нажмите и отпустите, что бы начать запись</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="modal video_record_modal" id="video_record2">
-			<video class="video-player" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
-			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
-			</video>
-			<div class="buttons_video">				
-				<div class="video_record">
-					<div class="ready_video">Идет видеозапись 00:43</div>
-					<button>
-						<svg class="icon icon_stop"><use xlink:href="images/sprite.svg#ic_video_record_stop"></use></svg>
-					</button>
-					<div class="text_icon">Нажмите, что бы закончить запись</div>
-				</div>
-			</div>
-		</section>
 
 
 		<div class="supports_error">

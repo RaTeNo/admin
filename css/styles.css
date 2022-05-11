@@ -7605,6 +7605,7 @@ aside .menu .sub_menu a.active
     padding-bottom: 100%;
 
     background: url(../images/ic_no_video.png) 50% no-repeat #696969;
+    border-radius: 10px;
 }
 
 .dialog .message .video_message .thumb img
@@ -8196,7 +8197,7 @@ aside .menu .sub_menu a.active
     display: flex;
     flex-direction: column;
 
-    padding: 50px 80px;
+    padding: 50px 0px;
 }
 
 
@@ -8219,6 +8220,7 @@ aside .menu .sub_menu a.active
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    cursor:pointer;
 }
 
 .dialog .upload .start_btn .icon
@@ -12296,4 +12298,419 @@ section.total {
     max-width: 100%;
     border-radius: 10px;
     display: block;
+}
+
+.buttons_video{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.buttons_video .video_record{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.buttons_video .video_record .icon{
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin:0;
+}
+
+.video_record button{
+    color: #3e3aff;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #e9eaf8;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons_video .text_icon{
+    margin-top:20px;
+}
+
+
+.video_record_modal{
+    padding:0px;
+    border-radius: 10px;
+    width: 900px;
+}
+
+.video_record_modal .carousel__button.is-close{
+    color: #fff;
+    background: #CC1B1B;
+}
+
+.video_empty{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #E2E2E2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    padding:20px;
+    text-align: center;
+}
+
+.video_empty svg{
+    width: 136px;
+    height: 102px;
+}
+
+.video_empty span{
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+
+.buttons_video .video_record .icon.icon_stop{
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin:0;
+}
+
+.ready_video{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    text-align: center;    
+    padding-left: 15px;
+    position: relative;
+    color:#898e98;
+}
+
+.ready_video:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    background: #FF2525;
+    border-radius: 50%;
+}
+
+
+/*TIKET*/
+.tiket{
+    padding: 30px;
+    border-radius: 15px;
+    background: #fff;
+}
+.tiket .data {
+    margin-bottom: 20px;
+}
+
+.tiket_title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.tiket .line {
+    border-top: 1px solid #D0D0D0;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-bottom: 20px;
+}
+
+.tiket .label span{
+    color:red;
+}
+
+.tiket form .field{
+    margin-bottom: 20px;
+}
+
+.tiket form .field .label{
+    margin-bottom: 10px;
+}
+
+.tiket form .field .input{
+    font-family: var(--font_family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    width: 100%;
+    padding: 11px 13px;
+    resize: none;
+    border: 1px solid #cecbea;
+    border-radius: 16px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+
+.tiket form .field textarea{
+    font-family: var(--font_family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    width: 100%;
+    height: 107px;
+    padding: 11px 13px;
+    resize: none;
+    border: 1px solid #cecbea;
+    border-radius: 16px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.tiket form button{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: var(--main_color);
+    order: 2;
+}
+
+.item_tiket{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.item_tiket .img{
+    margin-right: 15px;
+}   
+
+
+.item_tiket .item_tiket_content{
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+.item_tiket .item_tiket_name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 5px;
+}
+
+.item_tiket .item_tiket_name span{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #0B00D8;
+    border-radius: 9.5px;
+    padding:5px;
+    margin-left: 10px;
+}
+
+.item_tiket .item_tiket_text{
+    font-size: 14px;
+    line-height: 130%;
+    opacity: 0.8;
+}
+.item_tiket .item_tiket_time{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+.item_tiket  .item_tiket_text .audio_media{
+    margin-top:15px;
+}
+
+
+.item_tiket_file{
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 15px;
+}
+
+.item_tiket_file_img{
+    margin-right: 10px;
+}
+
+.item_tiket_file_desc{
+    margin-top: -8px;
+    margin-bottom: -8px;
+    align-self: center;
+}
+
+.item_tiket_file_desc .name {
+    color: #505261;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+.item_tiket_file_desc .links {
+    display: flex;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.item_tiket_file_desc .links > * {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.item_tiket_file_desc .links a {
+    font-size: 12px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+
+.item_tiket_file_desc .links a.green
+{
+    color: #1d972b;
+}
+
+.item_tiket_file_desc .links a.blue
+{
+    color: #4a8be1;
+}
+
+.item_tiket_file_desc .links a.orange
+{
+    color: #ff9617;
+}
+
+.item_tiket_file_desc .links a.red
+{
+    color: #e14a4a;
+}
+
+.item_tiket_file_desc .links a.orange {
+    color: #ff9617;
+}
+
+.tiket_create{
+    margin-left:auto;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: var(--main_color);
+    order: 2;
+    color:#fff !important;
+}
+
+.tickets .js-search-tiket {
+    background: #FFFFFF url(../images/search.svg) no-repeat 20px center;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 54px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px 0 50px;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu';
+}
+
+.ticket{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding:20px;
+}
+
+.ticket + .ticket{
+    margin-top:30px;
+}
+
+.ticket_time{
+    color: #6660A2;
+}
+
+.ticket_time span{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #27CC42;
+    border-radius: 9.5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.ticket_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.ticket_name{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 12px;
+}
+
+.ticket .line {
+    border-top: 1px solid #D0D0D0;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+
+.ticket_desc{
+    display: flex;
+    align-items: center;
+}
+.ticket_desc a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: var(--main_color);
+    color: #fff;
+    text-decoration: none;
+}
+.ticket_desc .img{
+    display: flex;
+    align-items: center;  
+    color: #6660A1;
+    opacity: 0.8;
+    margin-left: auto;
+}
+.ticket_desc img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.ticket_desc span{
+    color: #6660A1;
+    opacity: 0.8;
+    margin-left: 10px;
 }

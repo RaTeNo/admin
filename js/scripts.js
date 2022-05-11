@@ -66,6 +66,25 @@ $(() => {
 		});
     });  
 
+    $('body').on("keyup", '.js-search-tiket', function(event) {
+        let value = $(this).val();
+        if(value=="")
+        {
+        	$(".ticket").show();        	
+        }
+
+        let	list = $(".ticket");
+        list.each(function(index) {	
+		    let label = $(this).find(".ticket_name").text();
+		    if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
+		        $(this).hide();
+		    } else {
+		        $(this).show();
+		    }		   
+		});
+    });  
+
+
 
 	// Видео плеер
 	/*if ('function' === typeof MediaPlayer) {
