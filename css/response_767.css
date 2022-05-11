@@ -1084,7 +1084,7 @@
     .auth .contacts
     {
         width: 100%;
-        padding: 40px 24px;
+        padding: 20px 24px;
 
         border: none;
         border-top: 2px solid #020027;
@@ -1095,6 +1095,36 @@
     {
         margin-top: 4px;
     }
+
+
+
+    .auth .contacts .logo{
+        display: none;
+    }
+
+    .mobile_logo{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0 0;
+        max-width: 300px;
+        margin: auto;
+    }
+    .mobile_logo img{
+        display: block;   
+        width: auto;
+        max-width: 100%;
+        max-height: 100px;
+        margin:auto;
+    }
+
+    .mobile_logo .desc {
+        font-size: 14px;
+        line-height: 18px;
+        opacity: .5;
+        margin-top: 8px;
+        text-align: center;
+    }
+
 
 
 
