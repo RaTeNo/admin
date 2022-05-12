@@ -656,4 +656,43 @@
     .ticket_name{
         margin-bottom: 10px;
     }
+
+    .webinar_more{
+        min-height: 192px;
+        display: inline-flex !important;
+        justify-content: center;
+    }
+
+    .webinar_more a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.3px;
+        color: #000;
+        text-decoration: none;
+    }
+    .webinar_more span{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background: var(--main_color);
+        color:#fff;
+        margin-right: 10px;
+    }
+    .webinar_more svg{
+        width: 11px;
+        height: 7px;
+        transform: rotate(-90deg);
+    }
 }

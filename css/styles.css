@@ -12714,3 +12714,16 @@ section.total {
     opacity: 0.8;
     margin-left: 10px;
 }
+/**************************/
+
+.webinar_more{
+    display: none;
+}
+
+ .auth .contacts .descr{
+    display: none;
+}
+
+.title_setting.mt{
+    margin-top:20px;
+}

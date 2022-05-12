@@ -1106,6 +1106,10 @@
         display: none;
     }
 
+    .auth .contacts .descr{
+        display: block;
+    }
+
     .mobile_logo{
         display: flex;
         justify-content: center;

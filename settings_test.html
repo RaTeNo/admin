@@ -341,6 +341,17 @@
 										    </audio>
 										</div>
 
+										<div class="title_setting mt">Проверка веб-камеры</div>
+
+										<div class="buttons_video">											
+											<div class="video_record">
+												<button class="modal_btn" data-content='#video_record'>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_record"></use></svg>
+												</button>
+												<div class="text_icon">Записать с камеры</div>
+											</div>
+										</div>
+
 									</section>
 
 
@@ -398,6 +409,38 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+		<section class="modal video_record_modal" id="video_record">
+			<div class="video_empty">
+				<svg><use xlink:href="images/sprite.svg#ic_video_empty"></use></svg>
+				<span>Что бы загрузился видео-поток, нажмите “Разрешить” в левом верхнем углу</span>
+			</div>
+			<div class="buttons_video">				
+				<div class="video_record">
+					<button  class="modal_btn" data-content='#video_record2'>
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_record"></use></svg>
+					</button>
+					<div class="text_icon">Нажмите и отпустите, что бы начать запись</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="modal video_record_modal" id="video_record2">
+			<video class="video-player" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="images/xKzlNoeymHyOE8l0.mov" type="video/mp4">
+			    <source src="images/xKzlNoeymHyOE8l0.mov" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+			<div class="buttons_video">				
+				<div class="video_record">
+					<div class="ready_video">Идет видеозапись 00:43</div>
+					<button>
+						<svg class="icon icon_stop"><use xlink:href="images/sprite.svg#ic_video_record_stop"></use></svg>
+					</button>
+					<div class="text_icon">Нажмите, что бы закончить запись</div>
+				</div>
+			</div>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->
