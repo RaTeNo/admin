@@ -695,4 +695,8 @@
         height: 7px;
         transform: rotate(-90deg);
     }
+
+    .courses .course:hover,.simulators .simulator:hover,.articles .article:hover,.discussions .discussion:hover,.polls .poll:hover,.webinars .webinar:hover,.podcasts .podcast:hover,.persons .person:hover{
+        top:0;
+    }
 }
