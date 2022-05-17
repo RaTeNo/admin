@@ -46,7 +46,19 @@ $(() => {
 		Fancybox.show([{
 			src: $(this).data('content'),
 			type: 'inline'
-		}])
+		}],
+		{
+	    on: {
+		    closing: (fancybox, slide) => {
+		      	if(fancybox.items[0].src=="#video_modal")	    
+		      	{
+		      		video = document.querySelector(".video_new");
+					video.pause();
+					video.currentTime = 0;
+		      	}		        
+		    },
+	    },
+	  })
 	})
 
 	$('body').on('click', '.modal .close_btn', function (e) {
