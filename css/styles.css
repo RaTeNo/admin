@@ -2534,6 +2534,23 @@ aside .menu .sub_menu a.active
     filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
 }
 
+.simulators .simulator .avatar{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #8381A9;
+}
+
+.simulators .simulator .avatar img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 
 .simulators .simulator .format
 {
@@ -12727,3 +12744,9 @@ section.total {
 .title_setting.mt{
     margin-top:20px;
 }
+.viewer{
+    background: #CECCF3;
+    border-radius: 10px;
+    padding: 30px;
+}
+

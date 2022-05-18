@@ -699,4 +699,8 @@
     .courses .course:hover,.simulators .simulator:hover,.articles .article:hover,.discussions .discussion:hover,.polls .poll:hover,.webinars .webinar:hover,.podcasts .podcast:hover,.persons .person:hover{
         top:0;
     }
+
+    .viewer{
+        padding: 0;
+    }
 }
