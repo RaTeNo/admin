@@ -95,7 +95,7 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
                             <button id = "next" class = "toolbarButton pageDown" title = "Next Page"></button>
                         </div>
                         <label id = "pageNumberLabel" class = "toolbarLabel" for = "pageNumber">Страница:</label>
-                        <input type = "number" id = "pageNumber" class = "toolbarField pageNumber"/>
+                        <input type = "number" id = "pageNumber" class = "toolbarField pageNumber" disabled/>
                         <span id = "numPages" class = "toolbarLabel"></span>
                     </div>
                     <div id = "toolbarMiddleContainer" class = "outerCenter">
@@ -232,6 +232,9 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
                 margin-left: 20px;
             }
 
+            #pageNumber{
+
+            }
 
         </style>
     </body>

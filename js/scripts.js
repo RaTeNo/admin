@@ -564,6 +564,11 @@ $(window).on('load', () => {
 	$('.workbook .row').each(function () {
 		namesHeight($(this), parseInt($(this).css('--workbook_count')))
 	})
+
+	$('.files .row').each(function () {
+		namesHeight2($(this), 100)
+	})
+
 })
 
 
@@ -614,6 +619,12 @@ $(window).on('resize', () => {
 			namesHeight($(this), parseInt($(this).css('--workbook_count')))
 		})
 
+		$('.files .row').each(function () {
+			namesHeight2($(this), 100)
+		})
+
+		
+
 
 		// Перезапись ширины окна
 		WW = $(window).width()
@@ -633,6 +644,23 @@ function namesHeight(context, step) {
 	$items.each(function () {
 		setHeight($items.slice(start, finish).find('.name'))
 		setHeight($items.slice(start, finish).find('.desc'))
+
+		start = start + step
+		finish = finish + step
+	})
+}
+
+function namesHeight2(context, step) {
+	console.log(step);
+	let start = 0,
+		finish = step,
+		$items = context.find('> *')
+
+	//$items.find('.name, .desc').height('auto')
+	$items.each(function () {
+		console.log($items.slice(start, finish));
+		setHeight($items.slice(start, finish))
+		setHeight($items.slice(start, finish))
 
 		start = start + step
 		finish = finish + step

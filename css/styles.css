@@ -3515,6 +3515,8 @@ aside .menu .sub_menu a.active
 
     align-items: stretch;
     align-content: stretch;
+
+    --files_count: 3;
 }
 
 .files .row > *
@@ -12734,7 +12736,7 @@ section.total {
 /**************************/
 
 .webinar_more{
-    display: none;
+    display: none !important;
 }
 
  .auth .contacts .descr{
@@ -12750,3 +12752,19 @@ section.total {
     padding: 30px;
 }
 
+.viewer_container{
+    position: relative;
+    padding-bottom: 142%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+}
+
+.viewer_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}

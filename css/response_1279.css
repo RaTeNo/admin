@@ -770,7 +770,6 @@
     {
         position: relative;
 
-        height: 99px;
         padding-left: 63px;
     }
 
@@ -791,13 +790,13 @@
 
     .files .row .file .name
     {
-        display: -webkit-box;
+        /*display: -webkit-box;
         overflow: hidden;
 
         max-height: 38px;
 
         -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: vertical;*/
     }
 
     .files .row .file .links

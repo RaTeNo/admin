@@ -113,7 +113,7 @@ $(() => {
 
 
 // Вспомогательные функции
-const setHeight = (className) => {
+const setHeight = (className) => {	
 	let maxheight = 0
 
 	className.each(function () {
