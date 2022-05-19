@@ -125,6 +125,13 @@ const setHeight = (className) => {
 	className.outerHeight(maxheight)
 }
 
+// Вспомогательные функции
+const setHeight2 = (className) => {	
+	const elHeight = className.prev().outerHeight()
+	className.outerHeight(elHeight)
+}
+
+
 
 const is_touch_device = () => !!('ontouchstart' in window)
 

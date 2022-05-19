@@ -2549,6 +2549,9 @@ aside .menu .sub_menu a.active
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    flex-shrink: 0;
+    height: 40px;
+    object-fit: cover;
 }
 
 
@@ -2625,6 +2628,15 @@ aside .menu .sub_menu a.active
     background: #ddd;
 }
 
+.simulators .simulator .name .thumb img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .simulators .simulator .name a .thumb + * {
     width: calc(100% - 51px);
     align-self: center;
@@ -12754,17 +12766,17 @@ section.total {
 
 .viewer_container{
     position: relative;
-    padding-bottom: 100%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    padding-bottom: 200%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
     height: 0;
     overflow: hidden;
 }
 
 .viewer_container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-width: 0;
-  outline-width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
 }

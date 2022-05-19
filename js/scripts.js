@@ -569,6 +569,13 @@ $(window).on('load', () => {
 		namesHeight2($(this), 100)
 	})
 
+	$('.webinar_more').each(function () {
+		setHeight2($(this));
+	})
+
+
+	
+
 })
 
 
