@@ -12766,7 +12766,7 @@ section.total {
 
 .viewer_container{
     position: relative;
-    padding-bottom: 200%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    padding-bottom: 100%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
     height: 0;
     overflow: hidden;
 }

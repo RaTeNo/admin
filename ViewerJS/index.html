@@ -79,9 +79,35 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
     <body>
         <div id = "viewer">
             <div id = "titlebar">
-                <div id = "documentName"></div>
+                <div id = "toolbarMiddleContainer" class = "outerCenter">
+                    <div id = "toolbarMiddle" class = "innerCenter">
+                        <div id = 'zoomButtons' class = "splitToolbarButton">
+                            <button id = "zoomOut" class = "toolbarButton zoomOut" title = "Zoom Out"></button>
+                            <div class="splitToolbarButtonSeparator"></div>
+                            <button id = "zoomIn" class = "toolbarButton zoomIn" title = "Zoom In"></button>
+                        </div>
+                        <span id="scaleSelectContainer" class="dropdownToolbarButton">
+                            <select id="scaleSelect" title="Zoom" oncontextmenu="return false;">
+                                <option id="pageAutoOption" value="auto" selected>Automatic</option>
+                                <option id="pageActualOption" value="page-actual">Actual Size</option>
+                                <option id="pageWidthOption" value="page-width">Full Width</option>
+                                <option id="customScaleOption" value="custom"> </option>
+                                <option value="0.5">50%</option>
+                                <option value="0.75">75%</option>
+                                <option value="1">100%</option>
+                                <option value="1.25">125%</option>
+                                <option value="1.5">150%</option>
+                                <option value="2">200%</option>
+                            </select>
+                        </span>
+                        <div id = "sliderContainer">
+                            <div id = "slider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "documentName" style="display: none;"></div>
                 <div id = "titlebarRight">
-                    <button id = "presentation" class = "toolbarButton presentation" title = "Presentation"></button>
+                    <button id = "presentation" class = "toolbarButton presentation" title = "Presentation" style="display: none;"></button>
                     <button id = "fullscreen" class = "toolbarButton fullscreen" title = "Fullscreen"></button>
                     <button id = "download" class = "toolbarButton download" title = "Download"></button>
                 </div>
@@ -98,32 +124,7 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
                         <input type = "number" id = "pageNumber" class = "toolbarField pageNumber" disabled/>
                         <span id = "numPages" class = "toolbarLabel"></span>
                     </div>
-                    <div id = "toolbarMiddleContainer" class = "outerCenter">
-                        <div id = "toolbarMiddle" class = "innerCenter">
-                            <div id = 'zoomButtons' class = "splitToolbarButton">
-                                <button id = "zoomOut" class = "toolbarButton zoomOut" title = "Zoom Out"></button>
-                                <div class="splitToolbarButtonSeparator"></div>
-                                <button id = "zoomIn" class = "toolbarButton zoomIn" title = "Zoom In"></button>
-                            </div>
-                            <span id="scaleSelectContainer" class="dropdownToolbarButton">
-                                <select id="scaleSelect" title="Zoom" oncontextmenu="return false;">
-                                    <option id="pageAutoOption" value="auto" selected>Automatic</option>
-                                    <option id="pageActualOption" value="page-actual">Actual Size</option>
-                                    <option id="pageWidthOption" value="page-width">Full Width</option>
-                                    <option id="customScaleOption" value="custom"> </option>
-                                    <option value="0.5">50%</option>
-                                    <option value="0.75">75%</option>
-                                    <option value="1">100%</option>
-                                    <option value="1.25">125%</option>
-                                    <option value="1.5">150%</option>
-                                    <option value="2">200%</option>
-                                </select>
-                            </span>
-                            <div id = "sliderContainer">
-                                <div id = "slider"></div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div id = "toolbarRight">
                     </div>
                 </div>
@@ -143,6 +144,12 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
         </div>
 
         <style>
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
             #toolbarContainer{
                 height: 70px;
                 bottom:0;
@@ -235,6 +242,138 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
             #pageNumber{
 
             }
+
+            html[dir='ltr'] .outerCenter{
+                float: left;
+                position: relative;
+                right: 0%;
+            }
+
+            html[dir='ltr'] .innerCenter{
+                right: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .dropdownToolbarButton > select{
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 12px;
+                color: #505261;
+                height: 30px;
+            }
+
+            .dropdownToolbarButton{
+                max-width: 100%;
+                background-size: 10px;
+                border-radius: 8px;
+            }
+
+            .dropdownToolbarButton > select > option{
+                background: #fff;
+            }
+
+            .dropdownToolbarButton > select:active, .dropdownToolbarButton > select:focus{
+                border:none;
+                background-image:none;
+                background-color:transparent;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                outline: none;
+            }
+
+            @media (max-width: 479px)
+            {
+                #titlebar, .toolbarButton{
+                    height: 35px;
+                }
+
+                .toolbarButton.zoomIn::before{
+                    content:"";
+                    background: url(images/toolbarButton-zoomIn.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .toolbarButton.zoomOut::before {
+                    content:"";
+                    background: url(images/toolbarButton-zoomOut.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .toolbarButton.fullscreen::before {
+                    content:"";
+                    display: inline-block;
+                    background: url(images/toolbarButton-fullscreen.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .toolbarButton.download::before {
+                    content:"";
+                    display: inline-block;
+                    background: url(images/toolbarButton-download.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                html[dir='ltr'] .splitToolbarButton > .toolbarButton:first-child, html[dir='rtl'] .splitToolbarButton > .toolbarButton:last-child{
+                    padding:0;
+                    margin:0;
+                    margin-left: 10px;
+                }
+
+                .dropdownToolbarButton > select{
+                    height: 10px;
+                    font-size: 8px;
+                }
+
+                html[dir='ltr'] #toolbarLeft > *, html[dir='ltr'] #toolbarMiddle > *, html[dir='ltr'] #toolbarRight > *, html[dir='ltr'] #titlebarRight > *{
+                    margin:0;
+                }
+
+                #titlebarRight{
+                    height: 35px;
+                }
+
+                .dropdownToolbarButton > select > option{
+                    font-size: 15px;
+                }
+
+                #toolbarContainer, #toolbarLeft{
+                    height: 35px;
+                }
+
+                html[dir='ltr'] #toolbarLeft{
+                    margin-left: 10px;
+                }
+
+                .toolbarLabel {
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 19px;
+                    color: #505261;
+                }
+
+                #pageNumber{
+                    height: 23px;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 9px;
+                }
+
+            }
+
 
         </style>
     </body>
