@@ -184,19 +184,19 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
                 display: none;
             }
 
-            #previous, #next, #titlebarRight button{
+            #previous, #next, #titlebarRight button,  #zoomButtons  .toolbarButton{
                 border: none;
                 height: auto;
                 box-shadow: none !important;
                 background:none !important;
             }
 
-            #previous:hover, #next:hover, #titlebarRight button:hover{
+            #previous:hover, #next:hover, #titlebarRight button:hover, #zoomButtons  .toolbarButton:hover{
                 background: none;
                 border:none;
             }
 
-            #previous:focus, #next:focus, #previous:active, #next:active, #titlebarRight button:focus, #titlebarRight button:active{
+            #previous:focus, #next:focus, #previous:active, #next:active, #titlebarRight button:focus, #titlebarRight button:active, #zoomButtons  .toolbarButton:active, #zoomButtons .toolbarButton:focus{
                 border:none;
             }
 
@@ -285,8 +285,10 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
 
             @media (max-width: 479px)
             {
-                #titlebar, .toolbarButton{
+                #titlebar, .toolbarButton {
                     height: 35px;
+                    display: flex;
+                    align-items: center;
                 }
 
                 .toolbarButton.zoomIn::before{
@@ -370,6 +372,16 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
                     text-align: center;
                     font-weight: 700;
                     font-size: 9px;
+                }
+
+                #zoomIn{
+                    padding:0;
+                    margin-right: 10px;
+                    margin-left: 10px; 
+                }
+
+                #navButtons{
+                    display: none;
                 }
 
             }
